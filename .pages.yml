@@ -1,0 +1,282 @@
+# Pages CMS configuration — https://pagescms.org
+# Lets you edit the website's text, prices, photos and contact details
+# from the Pages CMS dashboard, without touching the code.
+
+media:
+  input: media
+  output: media
+
+content:
+  # ---------------------------------------------------------------
+  - name: settings
+    label: Settings / الإعدادات
+    type: file
+    path: content/settings.json
+    format: json
+    fields:
+      - { name: phone, label: Phone number, type: string }
+      - { name: whatsapp, label: "WhatsApp number (with country code, e.g. 9665XXXXXXXX)", type: string }
+      - { name: xHandle, label: "X (Twitter) username, without @", type: string }
+      - { name: accentColor, label: "Button color (hex, e.g. #F6A528)", type: string }
+      - name: defaultLanguage
+        label: Language the site opens in
+        type: select
+        options: { values: [ar, en] }
+      - name: defaultTheme
+        label: Mode the site opens in
+        type: select
+        options: { values: [dark, light] }
+      - { name: logo, label: Logo, type: image }
+      - { name: backgroundArt, label: Background logo art, type: image }
+
+  # ---------------------------------------------------------------
+  - name: arabic
+    label: المحتوى العربي
+    type: file
+    path: content/ar.json
+    format: json
+    fields: &site_fields
+      - name: brand
+        label: Brand
+        type: object
+        fields:
+          - { name: name, label: Name, type: string }
+          - { name: tagline, label: Tagline, type: string }
+          - { name: logoAlt, label: Logo description (for screen readers), type: string }
+      - name: nav
+        label: Menu
+        type: object
+        fields:
+          - { name: story, label: Our story, type: string }
+          - { name: services, label: Services, type: string }
+          - { name: work, label: Our work, type: string }
+          - { name: packages, label: Packages, type: string }
+          - { name: faq, label: FAQ, type: string }
+          - { name: apply, label: Apply button, type: string }
+      - name: hero
+        label: Opening section
+        type: object
+        fields:
+          - name: slides
+            label: Slides
+            type: object
+            list: true
+            fields:
+              - { name: eyebrow, label: Small line above, type: string }
+              - { name: line1, label: Headline line 1, type: string }
+              - { name: line2, label: Headline line 2 (colored), type: string }
+              - { name: text, label: Paragraph, type: text }
+          - { name: tickerIntro, label: Rotating line start, type: string }
+          - name: ticker
+            label: Rotating endings
+            type: object
+            list: true
+            fields:
+              - { name: text, label: Text, type: string }
+          - { name: button, label: Main button, type: string }
+          - { name: secondButton, label: Second button, type: string }
+      - name: strips
+        label: Moving word strips
+        type: object
+        fields:
+          - name: top
+            label: Orange strip
+            type: object
+            list: true
+            fields:
+              - { name: text, label: Text, type: string }
+          - name: bottom
+            label: Blue strip
+            type: object
+            list: true
+            fields:
+              - { name: text, label: Text, type: string }
+      - name: story
+        label: Our story
+        type: object
+        fields:
+          - { name: label, label: Small label, type: string }
+          - { name: title, label: Title, type: string }
+          - { name: paragraph1, label: Paragraph 1, type: text }
+          - { name: paragraph2, label: Paragraph 2, type: text }
+          - name: stats
+            label: Numbers
+            type: object
+            list: true
+            fields:
+              - { name: number, label: Number, type: string }
+              - { name: label, label: Label, type: string }
+          - name: values
+            label: Vision / mission / values
+            type: object
+            list: true
+            fields:
+              - { name: title, label: Title, type: string }
+              - { name: text, label: Text, type: text }
+      - name: services
+        label: Services
+        type: object
+        fields:
+          - { name: label, label: Small label, type: string }
+          - { name: title, label: Title, type: string }
+          - name: items
+            label: Services
+            type: object
+            list: true
+            fields:
+              - name: icon
+                label: Icon
+                type: select
+                options: { values: [web, ads, social, brand, video, seo] }
+              - { name: title, label: Title, type: string }
+              - { name: text, label: Description, type: text }
+      - name: process
+        label: How we work
+        type: object
+        fields:
+          - { name: label, label: Small label, type: string }
+          - { name: title, label: Title, type: string }
+          - name: steps
+            label: Steps
+            type: object
+            list: true
+            fields:
+              - { name: title, label: Title, type: string }
+              - { name: text, label: Text, type: text }
+      - name: work
+        label: Our work (portfolio)
+        type: object
+        fields:
+          - { name: label, label: Small label, type: string }
+          - { name: title, label: Title, type: string }
+          - name: filters
+            label: Filter buttons
+            type: object
+            fields:
+              - { name: all, label: All, type: string }
+              - { name: web, label: Websites, type: string }
+              - { name: social, label: Social media, type: string }
+              - { name: brand, label: Branding, type: string }
+          - name: items
+            label: Projects
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Project name, type: string }
+              - { name: category, label: Category text, type: string }
+              - name: type
+                label: Filter group
+                type: select
+                options: { values: [web, social, brand] }
+              - { name: image, label: Image, type: image }
+      - name: packages
+        label: Packages
+        type: object
+        fields:
+          - { name: label, label: Small label, type: string }
+          - { name: title, label: Title, type: string }
+          - { name: popularBadge, label: Popular badge, type: string }
+          - { name: button, label: Button, type: string }
+          - { name: currency, label: Currency, type: string }
+          - { name: perMonth, label: Monthly price suffix, type: string }
+          - name: items
+            label: Packages
+            type: object
+            list: true
+            fields:
+              - { name: title, label: Title, type: string }
+              - { name: text, label: Description, type: text }
+              - { name: price, label: Price, type: string }
+              - { name: monthly, label: "Monthly price?", type: boolean }
+              - { name: featured, label: "Highlight as most popular?", type: boolean }
+              - name: features
+                label: Features
+                type: object
+                list: true
+                fields:
+                  - { name: text, label: Feature, type: string }
+      - name: clients
+        label: Clients & reviews
+        type: object
+        fields:
+          - { name: label, label: Small label, type: string }
+          - { name: title, label: Title, type: string }
+          - name: logos
+            label: Client logos
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Client name, type: string }
+              - { name: image, label: Logo, type: image }
+          - name: reviews
+            label: Reviews
+            type: object
+            list: true
+            fields:
+              - { name: text, label: Review, type: text }
+              - { name: name, label: Client name, type: string }
+              - { name: business, label: Business, type: string }
+      - name: faq
+        label: FAQ
+        type: object
+        fields:
+          - { name: label, label: Small label, type: string }
+          - { name: title, label: Title, type: string }
+          - name: items
+            label: Questions
+            type: object
+            list: true
+            fields:
+              - { name: question, label: Question, type: string }
+              - { name: answer, label: Answer, type: text }
+      - name: apply
+        label: Apply form
+        type: object
+        fields:
+          - { name: label, label: Small label, type: string }
+          - { name: title, label: Title, type: string }
+          - { name: text, label: Text, type: text }
+          - { name: address, label: Address, type: string }
+          - { name: nameLabel, label: Name field label, type: string }
+          - { name: namePlaceholder, label: Name field hint, type: string }
+          - { name: phoneLabel, label: Phone field label, type: string }
+          - { name: serviceLabel, label: Service field label, type: string }
+          - { name: messageLabel, label: Details field label, type: string }
+          - { name: messagePlaceholder, label: Details field hint, type: string }
+          - { name: button, label: Send button, type: string }
+          - { name: whatsappIntro, label: First line of the WhatsApp message, type: string }
+          - name: serviceOptions
+            label: Service choices
+            type: object
+            list: true
+            fields:
+              - { name: text, label: Choice, type: string }
+      - name: ui
+        label: Buttons & small texts
+        type: object
+        fields:
+          - { name: menuLabel, label: Menu label (screen readers), type: string }
+          - { name: switchLanguage, label: Language button description, type: string }
+          - { name: languageButton, label: Language button text, type: string }
+          - { name: darkMode, label: Dark mode label, type: string }
+          - { name: lightMode, label: Light mode label, type: string }
+          - { name: previous, label: Previous slide label, type: string }
+          - { name: next, label: Next slide label, type: string }
+          - { name: slide, label: Slide label, type: string }
+          - { name: whatsapp, label: WhatsApp button label, type: string }
+          - { name: imagePlaceholder, label: Text shown when a project has no image, type: string }
+          - { name: logoPlaceholder, label: Text shown when a client has no logo, type: string }
+      - name: footer
+        label: Footer
+        type: object
+        fields:
+          - { name: copyright, label: Copyright, type: string }
+          - { name: slogan, label: Slogan, type: string }
+
+  # ---------------------------------------------------------------
+  - name: english
+    label: English content
+    type: file
+    path: content/en.json
+    format: json
+    fields: *site_fields

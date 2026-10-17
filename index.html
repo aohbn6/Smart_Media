@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>وكالة الوسائط الذكية للدعاية والإعلان | Smart Media</title>
+<meta name="description" content="وكالة الوسائط الذكية للدعاية والإعلان في جدة: تصميم مواقع، متاجر إلكترونية، حملات إعلانية، إدارة حسابات التواصل الاجتماعي، وهوية بصرية.">
+<meta property="og:title" content="وكالة الوسائط الذكية للدعاية والإعلان | Smart Media">
+<meta property="og:description" content="نحوّل الفكرة إلى واقع: مواقع إلكترونية وحملات إعلانية في جدة.">
+<meta property="og:image" content="media/logo.png">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0A0E18">
+<link rel="icon" type="image/png" href="media/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&amp;family=Readex+Pro:wght@500;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!-- The page is drawn here by assets/js/app.js using the template below
+     and the text in content/ar.json, content/en.json and content/settings.json. -->
+<div id="app"><div class="sm-loading">…</div></div>
+<noscript><div class="sm-loading">يحتاج هذا الموقع إلى تفعيل JavaScript. This website needs JavaScript enabled.</div></noscript>
+
+<!-- Page template. {{...}} placeholders are filled from the content files.
+     sc-for repeats its children for each item in a list; sc-if shows its children only when a value is true. -->
+<template id="tpl">
+<div class="sm-root {{themeClass}}" dir="{{dir}}" lang="{{lang}}" style="--accent: {{accent}}; background: var(--page); color: var(--text); font-family: 'IBM Plex Sans Arabic', 'Readex Pro', 'Segoe UI', Tahoma, sans-serif; line-height: 1.7; min-height: 100vh">
+<div class="sm-progress" aria-hidden="true"></div>
+<div class="sm-bgrays" aria-hidden="true"></div>
+<sc-if value="{{wipe}}" hint-placeholder-val="{{ false }}">
+<div class="sm-wipe" aria-hidden="true">
+<div style="background: #0C6EB0"></div><div style="background: #46ABDC"></div><div style="background: #F6A528"></div><div style="background: #8AC442"></div>
+<img src="{{set.logo}}" alt="">
+</div>
+</sc-if>
+
+<!-- ============ HERO ============ -->
+<section id="top" style="position: relative; overflow: hidden; padding: 56px 24px 72px; background: linear-gradient(180deg, var(--heroBg) 0%, var(--heroBg) 55%, var(--bBlue) 100%)">
+<div aria-hidden="true" style="position: absolute; inset: 0; opacity: var(--glowOp)">
+<div class="sm-glow" style="position: absolute; width: 520px; height: 520px; left: 4%; top: 10%; border-radius: 50%; background: #0C6EB0; filter: blur(140px)"></div>
+<div class="sm-glow sm-g2" style="position: absolute; width: 380px; height: 380px; left: 26%; top: 48%; border-radius: 50%; background: #F6A528; filter: blur(150px)"></div>
+<div class="sm-glow sm-g3" style="position: absolute; width: 320px; height: 320px; right: 8%; bottom: -8%; border-radius: 50%; background: #8AC442; filter: blur(150px)"></div>
+</div>
+<div class="sm-art" aria-hidden="true" style="position: absolute; z-index: 0; left: -4%; top: -14%; width: 100%; height: 128%; display: flex; align-items: center; justify-content: center; pointer-events: none">
+<img src="{{set.art}}" alt="" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 40px 80px rgba(12,110,176,0.45))">
+</div>
+
+<div class="sm-liquid" style="position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; border-radius: 32px; overflow: hidden; min-height: 640px; display: flex; flex-direction: column">
+
+<header style="position: relative; z-index: 3; padding: 24px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#top" onClick="{{goTop}}" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--head)">
+<img src="{{set.logo}}" alt="{{t.logoAlt}}" style="width: 44px; height: 44px">
+<span style="display: flex; flex-direction: column; line-height: 1.25">
+<span style="font-family: 'Readex Pro', 'IBM Plex Sans Arabic', sans-serif; font-weight: 700; font-size: 17px">{{t.brand}}</span>
+<span style="font-size: 12px; color: var(--mut)">{{t.brandSub}}</span>
+</span>
+</a>
+<nav aria-label="{{t.navLabel}}" style="display: flex; flex-wrap: wrap; gap: 22px; font-size: 15px">
+<sc-for list="{{nav}}" as="n" hint-placeholder-count="5">
+<a class="nl" href="{{n.href}}" onClick="{{n.go}}" style="color: var(--text)">{{n.label}}</a>
+</sc-for>
+</nav>
+<div style="display: flex; align-items: center; gap: 10px">
+<button type="button" class="btn" onClick="{{toggleLang}}" aria-label="{{t.langAria}}" style="min-width: 44px; height: 44px; padding: 0 12px; border-radius: 10px; background: transparent; border: 1px solid var(--pill); color: var(--head); font: inherit; font-weight: 700; font-size: 14px; cursor: pointer">{{t.langBtn}}</button>
+<button type="button" class="btn" onClick="{{toggleTheme}}" aria-label="{{t.themeAria}}" style="width: 44px; height: 44px; border-radius: 10px; background: transparent; border: 1px solid var(--pill); color: var(--head); cursor: pointer; display: flex; align-items: center; justify-content: center">
+<sc-if value="{{isDark}}" hint-placeholder-val="{{ true }}">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+</sc-if>
+<sc-if value="{{isLight}}" hint-placeholder-val="{{ false }}">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>
+</sc-if>
+</button>
+<a href="#apply" onClick="{{goApply}}" class="btn" style="color: var(--head); text-decoration: none; font-weight: 700; font-size: 15px; padding: 10px 18px; border-radius: 10px; border: 1px solid {{accent}}; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">{{t.apply}}</a>
+</div>
+</header>
+
+<div style="position: relative; z-index: 2; flex: 1; display: flex; align-items: center; padding: 24px 32px 36px; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 14px; align-items: center">
+<button type="button" class="btn" aria-label="{{t.prev}}" onClick="{{prev}}" style="width: 44px; height: 44px; border-radius: 50%; background: transparent; border: 1px solid var(--pill); color: var(--head); cursor: pointer; display: flex; align-items: center; justify-content: center">
+<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="{{arrowBack}}"></path></svg>
+</button>
+<button type="button" class="btn" aria-label="{{t.next}}" onClick="{{next}}" style="width: 44px; height: 44px; border-radius: 50%; background: transparent; border: 1px solid {{accent}}; color: var(--heroAcc); cursor: pointer; display: flex; align-items: center; justify-content: center">
+<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="{{arrowFwd}}"></path></svg>
+</button>
+</div>
+<sc-for list="{{slides}}" as="s" hint-placeholder-count="1">
+<sc-if value="{{s.active}}" hint-placeholder-val="{{ true }}">
+<div id="slide-{{lang}}-{{$index}}" style="display: flex; flex-direction: column; gap: 18px; max-width: 600px">
+<span class="sm-up" style="font-size: 13px; letter-spacing: 2px; color: var(--mut); font-weight: 500">{{s.eyebrow}}</span>
+<h1 style="margin: 0; font-family: 'Readex Pro', 'IBM Plex Sans Arabic', sans-serif; font-size: 64px; line-height: 1.18; font-weight: 700; color: var(--head)">
+<span style="display: block"><sc-for list="{{s.w1}}" as="w" hint-placeholder-count="2"><span class="sm-word" style="animation-delay: {{w.d}}">{{w.txt}}</span> </sc-for></span>
+<span style="display: block"><sc-for list="{{s.w2}}" as="w" hint-placeholder-count="2"><span class="sm-word sm-shine" style="animation-delay: {{w.d}}">{{w.txt}}</span> </sc-for></span>
+</h1>
+<p class="sm-up sm-d2" style="margin: 0; font-size: 19px; color: var(--mut); max-width: 480px">{{s.text}}</p>
+<div class="sm-up sm-d3" style="font-size: 20px; font-weight: 700; color: var(--head); display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline">
+<span>{{t.tickPre}}</span>
+<span class="sm-tick" style="color: var(--heroAcc)"><span><sc-for list="{{tick}}" as="k" hint-placeholder-count="4"><span>{{k.txt}}</span></sc-for></span></span>
+</div>
+<div class="sm-up sm-d4" style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 4px">
+<a href="#apply" onClick="{{goApply}}" class="btn" style="display: inline-flex; align-items: center; gap: 12px; color: #0B0F14; background: {{accent}}; text-decoration: none; font-weight: 700; font-size: 16px; padding: 14px 24px; border-radius: 10px">{{t.cta}}
+<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="{{arrowFwd}}"></path></svg>
+</a>
+<a href="#story" onClick="{{goStory}}" class="nl" style="display: inline-flex; align-items: center; color: var(--head); font-size: 16px; padding: 14px 6px">{{t.cta2}}</a>
+</div>
+</div>
+</sc-if>
+</sc-for>
+</div>
+
+<div style="position: relative; z-index: 2; padding: 0 32px 28px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+<div style="display: flex; gap: 8px; align-items: center">
+<sc-for list="{{dots}}" as="d" hint-placeholder-count="3">
+<button type="button" aria-label="{{d.label}}" onClick="{{d.go}}" style="position: relative; overflow: hidden; height: 4px; border: none; padding: 0; cursor: pointer; border-radius: 4px; transition: all .3s; width: {{d.w}}; background: {{d.bg}}"><sc-if value="{{d.active}}" hint-placeholder-val="{{ false }}"><span class="sm-dotfill" onAnimationEnd="{{next}}" style="background: {{accent}}"></span></sc-if></button>
+</sc-for>
+</div>
+<span dir="ltr" style="font-family: 'Readex Pro', sans-serif; font-size: 14px; color: var(--mut)">{{counter}}</span>
+</div>
+</div>
+
+<div class="sm-stripe" aria-hidden="true" style="position: relative; z-index: 1; max-width: 1200px; margin: 28px auto 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); height: 4px; border-radius: 4px; overflow: hidden">
+<div style="background: #0C6EB0"></div><div style="background: #46ABDC"></div><div style="background: #F6A528"></div><div style="background: #8AC442"></div>
+</div>
+</section>
+
+<!-- ============ WORD STRIP ============ -->
+<div aria-hidden="true" style="background: #F6A528; color: #1A1206; padding: 18px 0; transform: rotate(-1.2deg); margin: -10px -20px 0; position: relative; z-index: 5; box-shadow: 0 10px 30px rgba(0,0,0,.2)">
+<div class="sm-marquee" dir="ltr"><div class="sm-track fast">
+<sc-for list="{{strip}}" as="x" hint-placeholder-count="14">
+<span style="display: inline-flex; align-items: center; gap: 28px; padding: 0 14px; font-family: 'Readex Pro', 'IBM Plex Sans Arabic', sans-serif; font-weight: 700; font-size: 28px; white-space: nowrap">{{x.txt}}<span style="width: 10px; height: 10px; border-radius: 50%; background: #0C6EB0; display: inline-block"></span></span>
+</sc-for>
+</div></div>
+</div>
+
+<!-- ============ STORY (blue) ============ -->
+<section id="story" class="sm-sec c-blue n-green">
+<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px 96px; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start">
+<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<span class="rv" style="color: var(--acc); font-weight: 700; font-size: 15px">{{t.storyLbl}}</span>
+<h2 style="margin: 0; font-family: 'Readex Pro', 'IBM Plex Sans Arabic', sans-serif; font-size: 42px; line-height: 1.3; color: var(--head)"><sc-for list="{{h.story}}" as="w" hint-placeholder-count="5"><span class="sm-w" style="animation-range: entry {{w.a}}% cover {{w.b}}%">{{w.txt}}</span> </sc-for></h2>
+</div>
+<div style="flex: 2 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 16px; font-size: 18px; color: var(--sm)">
+<p class="rv" style="margin: 0">{{t.story1}}</p>
+<p class="rv d2" style="margin: 0">{{t.story2}}</p>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px">
+<sc-for list="{{stats}}" as="st" hint-placeholder-count="4">
+<div class="{{st.cls}}" style="background: var(--card); border: 1px solid var(--cbd); border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 4px">
+<span class="num" style="font-family: 'Readex Pro', sans-serif; font-size: 38px; font-weight: 700; color: var(--acc)">{{st.n}}</span><span style="color: var(--sm)">{{st.label}}</span>
+</div>
+</sc-for>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px">
+<sc-for list="{{values}}" as="v" hint-placeholder-count="3">
+<div class="{{v.cls}}" style="border-top: 2px solid var(--acc); padding-top: 16px; display: flex; flex-direction: column; gap: 6px"><h3 style="margin: 0; font-size: 20px; color: var(--head)">{{v.title}}</h3><p style="margin: 0; color: var(--sm)">{{v.text}}</p></div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<!-- ============ SERVICES (green) ============ -->
+<section id="services" class="sm-sec c-green alt n-orange">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 10px; max-width: 680px">
+<span class="rv" style="color: var(--acc); font-weight: 700; font-size: 15px">{{t.servLbl}}</span>
+<h2 style="margin: 0; font-family: 'Readex Pro', 'IBM Plex Sans Arabic', sans-serif; font-size: 42px; line-height: 1.3; color: var(--head)"><sc-for list="{{h.serv}}" as="w" hint-placeholder-count="5"><span class="sm-w" style="animation-range: entry {{w.a}}% cover {{w.b}}%">{{w.txt}}</span> </sc-for></h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
+<sc-for list="{{services}}" as="s" hint-placeholder-count="6">
+<article class="{{s.cls}}" style="background: var(--card); border: 1px solid var(--cbd); border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div class="ic" style="width: 52px; height: 52px; border-radius: 14px; background: var(--icon); display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--iconFg)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="{{s.d}}"></path></svg></div>
+<h3 style="margin: 0; font-size: 21px; color: var(--head)">{{s.title}}</h3>
+<p style="margin: 0; color: var(--sm); font-size: 16px">{{s.text}}</p>
+</article>
+</sc-for>
+</div>
+</div>
+</section>
+
+<!-- ============ PROCESS (orange) ============ -->
+<section id="process" class="sm-sec c-orange n-sky">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 10px; max-width: 680px">
+<span class="rv" style="color: var(--acc); font-weight: 700; font-size: 15px">{{t.procLbl}}</span>
+<h2 style="margin: 0; font-family: 'Readex Pro', 'IBM Plex Sans Arabic', sans-serif; font-size: 42px; line-height: 1.3; color: var(--head)"><sc-for list="{{h.proc}}" as="w" hint-placeholder-count="5"><span class="sm-w" style="animation-range: entry {{w.a}}% cover {{w.b}}%">{{w.txt}}</span> </sc-for></h2>
+</div>
+<ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px">
+<sc-for list="{{steps}}" as="p" hint-placeholder-count="4">
+<li class="{{p.cls}}" style="background: var(--card); border: 1px solid var(--cbd); border-radius: 18px; padding: 26px; display: flex; flex-direction: column; gap: 10px"><span class="num" style="font-family: 'Readex Pro', sans-serif; font-size: 40px; font-weight: 700; color: var(--acc)">{{p.n}}</span><h3 style="margin: 0; font-size: 20px; color: var(--head)">{{p.title}}</h3><p style="margin: 0; color: var(--sm)">{{p.text}}</p></li>
+</sc-for>
+</ol>
+</div>
+</section>
+
+<!-- ============ WORK (sky) ============ -->
+<section id="work" class="sm-sec c-sky alt n-green">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 10px; max-width: 640px">
+<span class="rv" style="color: var(--acc); font-weight: 700; font-size: 15px">{{t.workLbl}}</span>
+<h2 style="margin: 0; font-family: 'Readex Pro', 'IBM Plex Sans Arabic', sans-serif; font-size: 42px; line-height: 1.3; color: var(--head)"><sc-for list="{{h.work}}" as="w" hint-placeholder-count="4"><span class="sm-w" style="animation-range: entry {{w.a}}% cover {{w.b}}%">{{w.txt}}</span> </sc-for></h2>
+</div>
+<div role="tablist" aria-label="{{t.workLbl}}" style="display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{filters}}" as="f" hint-placeholder-count="4">
+<button type="button" role="tab" class="btn" aria-selected="{{f.selected}}" onClick="{{f.pick}}" style="min-height: 44px; padding: 8px 18px; border-radius: 999px; font: inherit; font-size: 15px; cursor: pointer; background: {{f.bg}}; color: {{f.fg}}; border: 1px solid {{f.bd}}; font-weight: {{f.fw}}">{{f.label}}</button>
+</sc-for>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px">
+<sc-for list="{{works}}" as="w" hint-placeholder-count="6">
+<figure class="{{w.cls}}" style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+<sc-if value="{{w.image}}"><img src="{{w.image}}" alt="{{w.name}}" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 18px; border: 1px solid var(--cbd)"></sc-if><sc-if value="{{w.noImage}}"><div style="aspect-ratio: 4 / 3; border-radius: 18px; background: var(--card); border: 1px dashed var(--cbd); display: flex; align-items: center; justify-content: center; color: var(--sm)">{{t.workImg}}</div></sc-if>
+<figcaption style="display: flex; flex-direction: column"><strong style="color: var(--head); font-size: 18px">{{w.name}}</strong><span style="color: var(--sm); font-size: 15px">{{w.cat}}</span></figcaption>
+</figure>
+</sc-for>
+</div>
+</div>
+</section>
+
+<!-- ============ PACKAGES (green) ============ -->
+<section id="packages" class="sm-sec c-green n-orange">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 10px; max-width: 640px">
+<span class="rv" style="color: var(--acc); font-weight: 700; font-size: 15px">{{t.packLbl}}</span>
+<h2 style="margin: 0; font-family: 'Readex Pro', 'IBM Plex Sans Arabic', sans-serif; font-size: 42px; line-height: 1.3; color: var(--head)"><sc-for list="{{h.pack}}" as="w" hint-placeholder-count="4"><span class="sm-w" style="animation-range: entry {{w.a}}% cover {{w.b}}%">{{w.txt}}</span> </sc-for></h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 20px; align-items: stretch">
+<sc-for list="{{packs}}" as="k" hint-placeholder-count="3">
+<div class="{{k.cls}}" style="background: {{k.bg}}; border: 1px solid {{k.bd}}; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 18px; color: {{k.fg}}">
+<sc-if value="{{k.featured}}" hint-placeholder-val="{{ false }}"><span style="align-self: flex-start; background: #0C1A0C; color: #A8CC58; font-size: 13px; font-weight: 700; padding: 4px 12px; border-radius: 999px">{{t.popular}}</span></sc-if>
+<h3 style="margin: 0; font-size: 22px; color: {{k.hd}}">{{k.title}}</h3>
+<p style="margin: 0; color: {{k.mu}}">{{k.text}}</p>
+<div style="font-family: 'Readex Pro', sans-serif; font-size: 34px; font-weight: 700; color: {{k.hd}}">{{k.price}} <span style="font-size: 16px; font-weight: 500; color: {{k.mu}}">{{k.unit}}</span></div>
+<ul style="margin: 0; padding-inline-start: 20px; padding-inline-end: 0; display: flex; flex-direction: column; gap: 8px">
+<sc-for list="{{k.feats}}" as="ft" hint-placeholder-count="4"><li>{{ft.txt}}</li></sc-for>
+</ul>
+<a href="#apply" onClick="{{goApply}}" class="btn" style="margin-top: auto; text-align: center; background: {{k.btnBg}}; border: 1px solid {{k.btnBd}}; color: {{k.btnFg}}; text-decoration: none; padding: 14px; border-radius: 12px; font-weight: 700">{{t.choose}}</a>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<!-- ============ CLIENTS (orange) ============ -->
+<section id="clients" class="sm-sec c-orange alt n-blue">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 10px; max-width: 640px">
+<span class="rv" style="color: var(--acc); font-weight: 700; font-size: 15px">{{t.cliLbl}}</span>
+<h2 style="margin: 0; font-family: 'Readex Pro', 'IBM Plex Sans Arabic', sans-serif; font-size: 42px; line-height: 1.3; color: var(--head)"><sc-for list="{{h.cli}}" as="w" hint-placeholder-count="4"><span class="sm-w" style="animation-range: entry {{w.a}}% cover {{w.b}}%">{{w.txt}}</span> </sc-for></h2>
+</div>
+<div class="sm-marquee" dir="ltr" aria-label="{{t.cliLbl}}">
+<div class="sm-track">
+<sc-for list="{{logos}}" as="lg" hint-placeholder-count="12">
+<div style="flex: none; width: 190px; height: 84px; margin-right: 14px; border-radius: 14px; border: 1px dashed var(--cbd); background: var(--card); display: flex; align-items: center; justify-content: center; color: var(--sm); font-size: 14px; overflow: hidden"><sc-if value="{{lg.image}}"><img src="{{lg.image}}" alt="{{lg.name}}" loading="lazy" style="max-width: 80%; max-height: 60%; object-fit: contain"></sc-if><sc-if value="{{lg.noImage}}">{{lg.name}}</sc-if></div>
+</sc-for>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 20px">
+<sc-for list="{{quotes}}" as="q" hint-placeholder-count="3">
+<blockquote class="{{q.cls}}" style="margin: 0; background: var(--card); border: 1px solid var(--cbd); border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 18px">
+<svg class="qt" aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="#F6A528"><path d="M10 7H6a2 2 0 0 0-2 2v4h4v4h2V7zm10 0h-4a2 2 0 0 0-2 2v4h4v4h2V7z"></path></svg>
+<p style="margin: 0; color: var(--text); font-size: 17px">{{q.text}}</p>
+<footer style="color: var(--head); font-weight: 700">{{q.name}} <span style="color: var(--sm); font-weight: 400">— {{q.biz}}</span></footer>
+</blockquote>
+</sc-for>
+</div>
+</div>
+</section>
+
+<!-- ============ FAQ (blue) ============ -->
+<section id="faq" class="sm-sec c-blue n-end">
+<div style="max-width: 900px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span class="rv" style="color: var(--acc); font-weight: 700; font-size: 15px">{{t.faqLbl}}</span>
+<h2 style="margin: 0; font-family: 'Readex Pro', 'IBM Plex Sans Arabic', sans-serif; font-size: 42px; line-height: 1.3; color: var(--head)"><sc-for list="{{h.faq}}" as="w" hint-placeholder-count="2"><span class="sm-w" style="animation-range: entry {{w.a}}% cover {{w.b}}%">{{w.txt}}</span> </sc-for></h2>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<sc-for list="{{faqs}}" as="fq" hint-placeholder-count="5">
+<details class="{{fq.cls}}" style="background: var(--card); border: 1px solid var(--cbd); border-radius: 14px; padding: 20px 24px"><summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 18px; font-weight: 700; color: var(--head)">{{fq.q}}<span class="sm-plus" aria-hidden="true" style="color: var(--acc); font-size: 26px; transition: transform .2s">+</span></summary><p style="margin: 12px 0 0; color: var(--sm)">{{fq.a}}</p></details>
+</sc-for>
+</div>
+</div>
+</section>
+
+<!-- ============ SECOND WORD STRIP ============ -->
+<div aria-hidden="true" style="background: #0C6EB0; color: #FFFFFF; padding: 16px 0; transform: rotate(1deg); margin: 0 -20px; position: relative; z-index: 5">
+<div class="sm-marquee" dir="ltr"><div class="sm-track rev">
+<sc-for list="{{strip2}}" as="x" hint-placeholder-count="10">
+<span style="display: inline-flex; align-items: center; gap: 28px; padding: 0 14px; font-family: 'Readex Pro', 'IBM Plex Sans Arabic', sans-serif; font-weight: 700; font-size: 24px; white-space: nowrap">{{x.txt}}<span style="width: 10px; height: 10px; border-radius: 50%; background: #F6A528; display: inline-block"></span></span>
+</sc-for>
+</div></div>
+</div>
+
+<!-- ============ APPLY ============ -->
+<section id="apply" style="position: relative; overflow: hidden; background: var(--heroBg)">
+<div aria-hidden="true" style="position: absolute; inset: 0; opacity: var(--glowOp)">
+<div style="position: absolute; width: 420px; height: 420px; right: -80px; top: -80px; border-radius: 50%; background: #F6A528; filter: blur(160px); opacity: .45"></div>
+<div style="position: absolute; width: 420px; height: 420px; left: -60px; bottom: -120px; border-radius: 50%; background: #0C6EB0; filter: blur(160px); opacity: .55"></div>
+</div>
+<div style="position: relative; max-width: 1200px; margin: 0 auto; padding: 104px 24px 96px; display: flex; flex-wrap: wrap; gap: 48px">
+<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<span class="rv" style="color: var(--heroAcc); font-weight: 700; font-size: 15px">{{t.apply}}</span>
+<h2 style="margin: 0; font-family: 'Readex Pro', 'IBM Plex Sans Arabic', sans-serif; font-size: 42px; line-height: 1.3; color: var(--head)"><sc-for list="{{h.apply}}" as="w" hint-placeholder-count="4"><span class="sm-w" style="animation-range: entry {{w.a}}% cover {{w.b}}%">{{w.txt}}</span> </sc-for></h2>
+<p class="rv" style="margin: 0; color: var(--mut); font-size: 17px">{{t.applyText}}</p>
+<div class="rv d2" style="display: flex; flex-direction: column; gap: 14px; margin-top: 8px; color: var(--head); font-size: 17px">
+<a href="tel:{{set.phone}}" style="display: flex; align-items: center; gap: 12px; text-decoration: none"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#46ABDC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg><span dir="ltr">{{set.phone}}</span></a>
+<div style="display: flex; align-items: center; gap: 12px"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#46ABDC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span>{{t.address}}</span></div>
+<a href="https://x.com/{{set.x}}" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 12px; text-decoration: none"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#46ABDC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16"></path><path d="M20 4L4 20"></path></svg><span dir="ltr">@{{set.x}}</span></a>
+</div>
+</div>
+<div class="rv d2" style="flex: 1 1 420px; min-width: 0; background: var(--glass); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); border: 1px solid var(--glassBd); border-radius: 22px; padding: 32px; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; flex-direction: column; gap: 8px"><label for="f-name" style="font-size: 15px; color: var(--text)">{{t.fName}}</label><input id="f-name" class="fld" type="text" placeholder="{{t.fNamePh}}" style="background: var(--field); border: 1px solid var(--fieldBd); color: var(--head); border-radius: 10px; padding: 13px 14px; font: inherit; min-height: 48px; box-sizing: border-box"></div>
+<div style="display: flex; flex-direction: column; gap: 8px"><label for="f-phone" style="font-size: 15px; color: var(--text)">{{t.fPhone}}</label><input id="f-phone" class="fld" type="tel" placeholder="05xxxxxxxx" style="background: var(--field); border: 1px solid var(--fieldBd); color: var(--head); border-radius: 10px; padding: 13px 14px; font: inherit; min-height: 48px; box-sizing: border-box"></div>
+<div style="display: flex; flex-direction: column; gap: 8px"><label for="f-service" style="font-size: 15px; color: var(--text)">{{t.fService}}</label><select data-opts="options" id="f-service" class="fld" style="background: var(--field); border: 1px solid var(--fieldBd); color: var(--head); border-radius: 10px; padding: 13px 14px; font: inherit; min-height: 48px"></select></div>
+<div style="display: flex; flex-direction: column; gap: 8px"><label for="f-msg" style="font-size: 15px; color: var(--text)">{{t.fMsg}}</label><textarea id="f-msg" class="fld" rows="4" placeholder="{{t.fMsgPh}}" style="background: var(--field); border: 1px solid var(--fieldBd); color: var(--head); border-radius: 10px; padding: 13px 14px; font: inherit; resize: vertical"></textarea></div>
+<button type="button" class="btn" onClick="{{send}}" style="background: {{accent}}; color: #0B0F14; border: none; border-radius: 12px; padding: 15px; font: inherit; font-weight: 700; font-size: 17px; cursor: pointer; min-height: 52px">{{t.send}}</button>
+</div>
+</div>
+</section>
+
+<footer style="background: var(--page); border-top: 1px solid var(--line)">
+<div style="max-width: 1200px; margin: 0 auto; padding: 28px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; color: var(--mut); font-size: 14px">
+<span>{{t.copy}}</span><span>{{t.slogan}}</span>
+</div>
+</footer>
+
+<a class="wa" href="{{set.waLink}}" target="_blank" rel="noopener" aria-label="{{t.waAria}}" style="position: fixed; inset-inline-end: 22px; bottom: 22px; z-index: 50; width: 58px; height: 58px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.35)">
+<svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.7-5A8.5 8.5 0 1 1 8 19.3z"></path><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1.2-1.4-2-1-1 .8a4 4 0 0 1-2.1-2.1l.8-1-1-2z"></path></svg>
+</a>
+
+</div>
+</template>
+
+<script src="assets/js/vendor/morphdom.min.js"></script>
+<script src="assets/js/template.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

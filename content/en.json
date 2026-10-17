@@ -1,0 +1,128 @@
+{
+  "brand": { "name": "Smart Media", "tagline": "Advertising Agency", "logoAlt": "Smart Media agency logo" },
+  "nav": { "story": "Our story", "services": "Services", "work": "Our work", "packages": "Packages", "faq": "FAQ", "apply": "Apply now" },
+  "ui": {
+    "menuLabel": "Main menu", "switchLanguage": "التبديل إلى العربية", "languageButton": "ع",
+    "darkMode": "Dark mode", "lightMode": "Light mode",
+    "previous": "Previous slide", "next": "Next slide", "slide": "Slide",
+    "whatsapp": "Chat on WhatsApp", "imagePlaceholder": "[Project image]", "logoPlaceholder": "[Client logo]"
+  },
+  "hero": {
+    "slides": [
+      { "eyebrow": "Marketing & advertising agency in Jeddah", "line1": "We turn ideas", "line2": "into reality", "text": "We design professional websites and run your social media ad campaigns." },
+      { "eyebrow": "Web design & development", "line1": "Websites", "line2": "that sell for you", "text": "Fast, mobile-friendly websites and stores that make a professional first impression." },
+      { "eyebrow": "Ad campaigns", "line1": "Campaigns that reach", "line2": "the right customers", "text": "Well-planned campaigns on Snapchat, TikTok, Instagram and Google, with results you can measure." }
+    ],
+    "tickerIntro": "We're here to",
+    "ticker": [ { "text": "design your site" }, { "text": "launch your campaign" }, { "text": "build your brand" } ],
+    "button": "Send a request",
+    "secondButton": "About us"
+  },
+  "strips": {
+    "top": [ { "text": "Web design" }, { "text": "Online stores" }, { "text": "Ad campaigns" }, { "text": "Social media" }, { "text": "Branding" }, { "text": "Photo & video" }, { "text": "SEO" } ],
+    "bottom": [ { "text": "We turn ideas into reality" }, { "text": "Jeddah" }, { "text": "Smart Media" }, { "text": "Apply now" }, { "text": "Your growth partner" } ]
+  },
+  "story": {
+    "label": "Our story",
+    "title": "It started with an idea, now we are your growth partner",
+    "paragraph1": "Smart Media Advertising Agency started in Jeddah in [year founded] with a simple goal: helping businesses reach their customers in a smart, well-planned way.",
+    "paragraph2": "[Write how the agency started and its key milestones here.]",
+    "stats": [
+      { "number": "[No.]+", "label": "Projects delivered" },
+      { "number": "[No.]+", "label": "Happy clients" },
+      { "number": "[No.]", "label": "Years of experience" },
+      { "number": "[No.]", "label": "Ad campaigns" }
+    ],
+    "values": [
+      { "title": "Our vision", "text": "[The agency vision in one or two sentences]" },
+      { "title": "Our mission", "text": "[The agency mission in one or two sentences]" },
+      { "title": "Our values", "text": "[The values that set your work apart]" }
+    ]
+  },
+  "services": {
+    "label": "Our services",
+    "title": "Everything your business needs to shine online",
+    "items": [
+      { "icon": "web", "title": "Web design & development", "text": "Business websites and online stores: fast, mobile-friendly, in Arabic and English." },
+      { "icon": "ads", "title": "Ad campaigns", "text": "Paid campaigns on Snapchat, TikTok, Instagram, X and Google, with results tracked as they come in." },
+      { "icon": "social", "title": "Social media management", "text": "A monthly content plan, post designs, scheduling, and a performance report every month." },
+      { "icon": "brand", "title": "Branding & design", "text": "Logos, full brand identities, ad designs and print that reflect who you are." },
+      { "icon": "video", "title": "Photo & content creation", "text": "Product photography, short videos (Reels and TikTok) and motion graphics." },
+      { "icon": "seo", "title": "Google visibility (SEO)", "text": "Optimizing your site to show up in search, plus setting up your Google Maps listing." }
+    ]
+  },
+  "process": {
+    "label": "How we work",
+    "title": "Four steps from idea to launch",
+    "steps": [
+      { "title": "We listen", "text": "A short session to understand your business, goals and audience." },
+      { "title": "We plan & design", "text": "We prepare the design and plan and show you before we build." },
+      { "title": "We build & launch", "text": "We build the site or launch the campaign after your final approval." },
+      { "title": "We follow up", "text": "Post-launch support and reports that help you make better decisions." }
+    ]
+  },
+  "work": {
+    "label": "Our work",
+    "title": "Projects we're proud of",
+    "filters": { "all": "All", "web": "Websites", "social": "Social media", "brand": "Branding" },
+    "items": [
+      { "name": "[Project name]", "category": "Website", "type": "web", "image": "" },
+      { "name": "[Project name]", "category": "Social media campaign", "type": "social", "image": "" },
+      { "name": "[Project name]", "category": "Brand identity", "type": "brand", "image": "" },
+      { "name": "[Project name]", "category": "Online store", "type": "web", "image": "" },
+      { "name": "[Project name]", "category": "Account management", "type": "social", "image": "" },
+      { "name": "[Project name]", "category": "Logo design", "type": "brand", "image": "" }
+    ]
+  },
+  "packages": {
+    "label": "Packages",
+    "title": "Pick the package that fits you",
+    "popularBadge": "Most popular",
+    "button": "Choose package",
+    "currency": "SAR",
+    "perMonth": "SAR / month",
+    "items": [
+      { "title": "Business website", "text": "For companies and shops that want a professional presence.", "price": "[Price]", "monthly": false, "featured": false,
+        "features": [ { "text": "Up to [number] pages" }, { "text": "Mobile-friendly design" }, { "text": "WhatsApp button and contact form" }, { "text": "Google Maps integration" } ] },
+      { "title": "Online store", "text": "Sell your products online with ease.", "price": "[Price]", "monthly": false, "featured": true,
+        "features": [ { "text": "Dashboard to manage products" }, { "text": "Payment gateway integration" }, { "text": "Shipping company integration" }, { "text": "Store management training" } ] },
+      { "title": "Social media package", "text": "Your accounts and campaigns, managed monthly.", "price": "[Price]", "monthly": true, "featured": false,
+        "features": [ { "text": "[number] post designs per month" }, { "text": "One paid ad campaign managed" }, { "text": "Replies to messages and comments" }, { "text": "Monthly performance report" } ] }
+    ]
+  },
+  "clients": {
+    "label": "Our clients",
+    "title": "What they say about us",
+    "logos": [ { "name": "[Client logo]", "image": "" }, { "name": "[Client logo]", "image": "" }, { "name": "[Client logo]", "image": "" }, { "name": "[Client logo]", "image": "" }, { "name": "[Client logo]", "image": "" }, { "name": "[Client logo]", "image": "" } ],
+    "reviews": [
+      { "text": "[Client review of working with you]", "name": "[Client name]", "business": "[Business]" },
+      { "text": "[Client review of working with you]", "name": "[Client name]", "business": "[Business]" },
+      { "text": "[Client review of working with you]", "name": "[Client name]", "business": "[Business]" }
+    ]
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Got a question?",
+    "items": [
+      { "question": "How long does a website take?", "answer": "[Write the answer here]" },
+      { "question": "Are the domain and hosting included?", "answer": "[Write the answer here]" },
+      { "question": "Can I edit the website myself after delivery?", "answer": "[Write the answer here]" },
+      { "question": "How do I see my campaign results?", "answer": "[Write the answer here]" },
+      { "question": "What payment methods do you accept?", "answer": "[Write the answer here]" }
+    ]
+  },
+  "apply": {
+    "label": "Apply now",
+    "title": "Ready to start? Send your request",
+    "text": "Fill in the form with your project details and we'll get back to you with a quote within [time].",
+    "address": "Jeddah – Hail Street",
+    "nameLabel": "Name", "namePlaceholder": "Your name",
+    "phoneLabel": "Mobile number",
+    "serviceLabel": "Service needed",
+    "messageLabel": "Project details", "messagePlaceholder": "Tell us briefly about your idea",
+    "button": "Send request",
+    "whatsappIntro": "New request from the website",
+    "serviceOptions": [ { "text": "Website design" }, { "text": "Online store" }, { "text": "Social media management" }, { "text": "Ad campaign" }, { "text": "Brand identity" }, { "text": "Photo & content" } ]
+  },
+  "footer": { "copyright": "© 2026 Smart Media Advertising Agency", "slogan": "We turn ideas into reality" }
+}
