@@ -15,14 +15,19 @@
     social: 'M5 4h14a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zM3 9h18M8 2v4M16 2v4M8 14h3M8 17h6',
     brand: 'M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 15.6 7.1 18.2 8 12.7 4 8.8 9.5 8z',
     video: 'M4 6h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zM16 10l6-3v10l-6-3',
-    seo: 'M11 4a7 7 0 1 1 0 14a7 7 0 1 1 0-14zM21 21l-4.5-4.5'
+    seo: 'M11 4a7 7 0 1 1 0 14a7 7 0 1 1 0-14zM21 21l-4.5-4.5',
+    event: 'M8 2v4M16 2v4M4 6h16a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zM12 11l1.2 2.4 2.6.4-1.9 1.8.5 2.6-2.4-1.3-2.4 1.3.5-2.6-1.9-1.8 2.6-.4z',
+    sign: 'M3 4h18v10H3zM8 14v7M16 14v7M7 8h10M7 11h6',
+    booth: 'M3 21V9l9-6 9 6v12M3 21h18M7 21v-7h10v7M9 10h6',
+    gift: 'M4 11h16v10H4zM2 7h20v4H2zM12 7v14M12 7c-2-4-6-4-6-1.5S9 7 12 7c3 0 6-.5 6-2.5S14 3 12 7z'
   };
-  var SECTIONS = ['#story', '#services', '#work', '#packages', '#faq'];
+  var SECTIONS = { story: '#story', services: '#services', work: '#work', packages: '#packages', faq: '#faq' };
+  var WORKS_PER_PAGE = 9;
   var AR_DIGITS = ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩'];
 
   var content = {};
   var settings = {};
-  var state = { slide: 0, filter: 'all', lang: null, theme: null, wipe: false };
+  var state = { slide: 0, filter: 'all', showAll: false, lang: null, theme: null, wipe: false };
 
   /* ---------- state + rendering ---------- */
   var pending = false;
@@ -122,8 +127,10 @@
       applyText: c.apply.text, address: c.apply.address,
       fName: c.apply.nameLabel, fNamePh: c.apply.namePlaceholder, fPhone: c.apply.phoneLabel,
       fService: c.apply.serviceLabel, fMsg: c.apply.messageLabel, fMsgPh: c.apply.messagePlaceholder,
-      send: c.apply.button, copy: c.footer.copyright, slogan: c.footer.slogan, waAria: c.ui.whatsapp
+      send: c.apply.button, copy: c.footer.copyright, slogan: c.footer.slogan, waAria: c.ui.whatsapp,
+      view: c.ui.view, more: c.ui.more, poBoxLabel: c.ui.poBoxLabel
     };
+    var showPackages = settings.showPackages !== false;
 
     var slides = slidesData.map(function (s, k) {
       var w1 = words(s.line1, 0.1);
@@ -138,23 +145,25 @@
         bg: k === i ? (light ? 'rgba(11,22,34,0.15)' : 'rgba(255,255,255,0.22)') : (light ? 'rgba(11,22,34,0.25)' : 'rgba(255,255,255,0.3)')
       };
     });
-    var navKeys = ['story', 'services', 'work', 'packages', 'faq'];
-    var nav = navKeys.map(function (key, k) { return { label: c.nav[key], href: SECTIONS[k], go: go(SECTIONS[k]) }; });
+    var navKeys = ['story', 'services', 'work', 'packages', 'faq'].filter(function (key) { return key !== 'packages' || showPackages; });
+    var nav = navKeys.map(function (key) { return { label: c.nav[key], href: SECTIONS[key], go: go(SECTIONS[key]) }; });
     var tick = (c.hero.ticker || []).concat((c.hero.ticker || []).slice(0, 1)).map(function (x) { return { txt: x.text }; });
 
     var f = state.filter;
-    var filters = ['all', 'web', 'social', 'brand'].map(function (id) {
+    var filters = (c.work.filters || []).map(function (flt) {
+      var id = flt.id;
       var on = id === f;
       return {
-        label: c.work.filters[id], selected: on ? 'true' : 'false', pick: function () { setState({ filter: id }); },
+        label: flt.label, selected: on ? 'true' : 'false', pick: function () { setState({ filter: id, showAll: false }); },
         bg: on ? (light ? '#0C6EB0' : '#46ABDC') : 'transparent',
         fg: on ? (light ? '#FFFFFF' : '#06202E') : 'var(--text)',
         bd: on ? (light ? '#0C6EB0' : '#46ABDC') : 'var(--cbd)', fw: on ? '700' : '400'
       };
     });
-    var works = (c.work.items || [])
-      .filter(function (w) { return f === 'all' || w.type === f; })
-      .map(function (w, k) { return { name: w.name, cat: w.category, image: w.image || '', noImage: !w.image, cls: 'rv zoom d' + ((k % 3) + 1) }; });
+    var allWorks = (c.work.items || []).filter(function (w) { return f === 'all' || w.type === f; });
+    var moreWorks = !state.showAll && allWorks.length > WORKS_PER_PAGE;
+    var works = (moreWorks ? allWorks.slice(0, WORKS_PER_PAGE) : allWorks)
+      .map(function (w, k) { return { name: w.name, cat: w.category, image: w.image || '', noImage: !w.image, link: w.link || '', cls: 'rv zoom d' + ((k % 3) + 1) }; });
 
     var packs = (c.packages.items || []).map(function (p, k) {
       var ft = !!p.featured;
@@ -168,7 +177,13 @@
       };
     });
 
-    var logos = repeat((c.clients.logos || []).map(function (l) { return { name: l.name, image: l.image || '', noImage: !l.image }; }), 6);
+    // Client logos: split into two scrolling rows (the second row moves the other way).
+    var allLogos = (c.clients.logos || []).map(function (l) {
+      return { name: l.name, image: l.image || '', noImage: !l.image, bg: l.image ? '#FFFFFF' : 'var(--card)', bd: l.image ? 'transparent' : 'var(--cbd)' };
+    });
+    var half = allLogos.length > 12 ? Math.ceil(allLogos.length / 2) : allLogos.length;
+    var logos = repeat(allLogos.slice(0, half), 8);
+    var logos2 = repeat(allLogos.slice(half), 8);
     var wa = String(settings.whatsapp || '').replace(/\D/g, '');
 
     return {
@@ -176,9 +191,13 @@
       themeClass: light ? 'sm-light' : 'sm-dark', isDark: !light, isLight: light,
       set: {
         logo: settings.logo || 'media/logo.png', art: settings.backgroundArt || 'media/logo-rays.svg',
-        phone: settings.phone || '', x: settings.xHandle || '',
+        phone: settings.phone || '', phoneDisplay: settings.phoneDisplay || settings.phone || '',
+        x: settings.xHandle || '', instagram: settings.instagram || '', tiktok: settings.tiktok || '',
+        email: settings.email || '', poBox: settings.poBox || '',
+        waNumber: wa ? (settings.whatsappDisplay || '+' + wa) : '',
         waLink: wa ? 'https://wa.me/' + wa : 'tel:' + (settings.phone || '')
       },
+      showPackages: showPackages,
       toggleLang: go(null, function () { setState({ lang: ar ? 'en' : 'ar' }); }),
       toggleTheme: go(null, function () { setState({ theme: light ? 'dark' : 'light' }); }),
       goApply: go('#apply'), goStory: go('#story'), goTop: go('#top'),
@@ -200,7 +219,8 @@
       values: (c.story.values || []).map(function (v, k) { return { title: v.title, text: v.text, cls: 'rv d' + ((k % 4) + 1) }; }),
       services: (c.services.items || []).map(function (s, k) { return { title: s.title, text: s.text, d: ICONS[s.icon] || ICONS.web, cls: cardClass(k, 3) }; }),
       steps: (c.process.steps || []).map(function (s, k) { return { title: s.title, text: s.text, n: digits(k + 1, ar), cls: cardClass(k, 4) }; }),
-      filters: filters, works: works, packs: packs, logos: logos,
+      filters: filters, works: works, packs: packs, logos: logos, logos2: logos2, hasLogos2: logos2.length > 0,
+      moreWorks: moreWorks, showMore: function () { setState({ showAll: true }); },
       quotes: (c.clients.reviews || []).map(function (q, k) { return { text: q.text, name: q.name, biz: q.business, cls: cardClass(k, 3) }; }),
       faqs: (c.faq.items || []).map(function (q, k) { return { q: q.question, a: q.answer, cls: 'rv lift d' + ((k % 4) + 1) }; }),
       options: (c.apply.serviceOptions || []).map(function (o) { return { txt: o.text }; }),

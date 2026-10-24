@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>وكالة الوسائط الذكية للدعاية والإعلان | Smart Media</title>
-<meta name="description" content="وكالة الوسائط الذكية للدعاية والإعلان في جدة: تصميم مواقع، متاجر إلكترونية، حملات إعلانية، إدارة حسابات التواصل الاجتماعي، وهوية بصرية.">
+<meta name="description" content="وكالة الوسائط الذكية للدعاية والإعلان في جدة: حملات تسويقية وإعلانية، علاقات عامة وفعاليات، لوحات إعلانية وإرشادية، معارض وبوثات، برومو وتصوير، مطبوعات، هدايا دعائية ودروع، وتصميم مواقع.">
 <meta property="og:title" content="وكالة الوسائط الذكية للدعاية والإعلان | Smart Media">
-<meta property="og:description" content="نحوّل الفكرة إلى واقع: مواقع إلكترونية وحملات إعلانية في جدة.">
+<meta property="og:description" content="نحوّل الفكرة إلى واقع — إعلان • تسويق • علاقات عامة • هدايا تذكارية. جدة، المملكة العربية السعودية.">
 <meta property="og:image" content="media/logo.png">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#0A0E18">
@@ -211,14 +211,16 @@
 <sc-for list="{{works}}" as="w" hint-placeholder-count="6">
 <figure class="{{w.cls}}" style="margin: 0; display: flex; flex-direction: column; gap: 14px">
 <sc-if value="{{w.image}}"><img src="{{w.image}}" alt="{{w.name}}" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 18px; border: 1px solid var(--cbd)"></sc-if><sc-if value="{{w.noImage}}"><div style="aspect-ratio: 4 / 3; border-radius: 18px; background: var(--card); border: 1px dashed var(--cbd); display: flex; align-items: center; justify-content: center; color: var(--sm)">{{t.workImg}}</div></sc-if>
-<figcaption style="display: flex; flex-direction: column"><strong style="color: var(--head); font-size: 18px">{{w.name}}</strong><span style="color: var(--sm); font-size: 15px">{{w.cat}}</span></figcaption>
+<figcaption style="display: flex; flex-direction: column"><strong style="color: var(--head); font-size: 18px">{{w.name}}</strong><span style="color: var(--sm); font-size: 15px">{{w.cat}}</span><sc-if value="{{w.link}}"><a class="nl" href="{{w.link}}" target="_blank" rel="noopener" style="align-self: flex-start; margin-top: 6px; color: var(--acc); font-size: 15px; font-weight: 700">{{t.view}} ↗</a></sc-if></figcaption>
 </figure>
 </sc-for>
 </div>
+<sc-if value="{{moreWorks}}"><div style="display: flex; justify-content: center"><button type="button" class="btn" onClick="{{showMore}}" style="min-height: 48px; padding: 12px 28px; border-radius: 999px; font: inherit; font-weight: 700; font-size: 16px; cursor: pointer; background: transparent; color: var(--head); border: 1px solid var(--acc)">{{t.more}}</button></div></sc-if>
 </div>
 </section>
 
-<!-- ============ PACKAGES (green) ============ -->
+<!-- ============ PACKAGES (green) — shown only when settings.showPackages is true ============ -->
+<sc-if value="{{showPackages}}">
 <section id="packages" class="sm-sec c-green n-orange">
 <div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 48px">
 <div style="display: flex; flex-direction: column; gap: 10px; max-width: 640px">
@@ -241,6 +243,7 @@
 </div>
 </div>
 </section>
+</sc-if>
 
 <!-- ============ CLIENTS (orange) ============ -->
 <section id="clients" class="sm-sec c-orange alt n-blue">
@@ -249,12 +252,23 @@
 <span class="rv" style="color: var(--acc); font-weight: 700; font-size: 15px">{{t.cliLbl}}</span>
 <h2 style="margin: 0; font-family: 'Readex Pro', 'IBM Plex Sans Arabic', sans-serif; font-size: 42px; line-height: 1.3; color: var(--head)"><sc-for list="{{h.cli}}" as="w" hint-placeholder-count="4"><span class="sm-w" style="animation-range: entry {{w.a}}% cover {{w.b}}%">{{w.txt}}</span> </sc-for></h2>
 </div>
+<div style="display: flex; flex-direction: column; gap: 14px">
 <div class="sm-marquee" dir="ltr" aria-label="{{t.cliLbl}}">
-<div class="sm-track">
+<div class="sm-track" style="animation-duration: 90s">
 <sc-for list="{{logos}}" as="lg" hint-placeholder-count="12">
-<div style="flex: none; width: 190px; height: 84px; margin-right: 14px; border-radius: 14px; border: 1px dashed var(--cbd); background: var(--card); display: flex; align-items: center; justify-content: center; color: var(--sm); font-size: 14px; overflow: hidden"><sc-if value="{{lg.image}}"><img src="{{lg.image}}" alt="{{lg.name}}" loading="lazy" style="max-width: 80%; max-height: 60%; object-fit: contain"></sc-if><sc-if value="{{lg.noImage}}">{{lg.name}}</sc-if></div>
+<div style="flex: none; width: 150px; height: 120px; margin-right: 14px; border-radius: 16px; border: 1px solid {{lg.bd}}; background: {{lg.bg}}; display: flex; align-items: center; justify-content: center; color: var(--sm); font-size: 14px; text-align: center; padding: 8px; box-sizing: border-box; overflow: hidden"><sc-if value="{{lg.image}}"><img src="{{lg.image}}" alt="{{lg.name}}" title="{{lg.name}}" style="max-width: 100%; max-height: 100%; object-fit: contain"></sc-if><sc-if value="{{lg.noImage}}">{{lg.name}}</sc-if></div>
 </sc-for>
 </div>
+</div>
+<sc-if value="{{hasLogos2}}">
+<div class="sm-marquee" dir="ltr" aria-hidden="true">
+<div class="sm-track rev" style="animation-duration: 90s">
+<sc-for list="{{logos2}}" as="lg" hint-placeholder-count="12">
+<div style="flex: none; width: 150px; height: 120px; margin-right: 14px; border-radius: 16px; border: 1px solid {{lg.bd}}; background: {{lg.bg}}; display: flex; align-items: center; justify-content: center; color: var(--sm); font-size: 14px; text-align: center; padding: 8px; box-sizing: border-box; overflow: hidden"><sc-if value="{{lg.image}}"><img src="{{lg.image}}" alt="{{lg.name}}" title="{{lg.name}}" style="max-width: 100%; max-height: 100%; object-fit: contain"></sc-if><sc-if value="{{lg.noImage}}">{{lg.name}}</sc-if></div>
+</sc-for>
+</div>
+</div>
+</sc-if>
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 20px">
 <sc-for list="{{quotes}}" as="q" hint-placeholder-count="3">
@@ -304,9 +318,16 @@
 <h2 style="margin: 0; font-family: 'Readex Pro', 'IBM Plex Sans Arabic', sans-serif; font-size: 42px; line-height: 1.3; color: var(--head)"><sc-for list="{{h.apply}}" as="w" hint-placeholder-count="4"><span class="sm-w" style="animation-range: entry {{w.a}}% cover {{w.b}}%">{{w.txt}}</span> </sc-for></h2>
 <p class="rv" style="margin: 0; color: var(--mut); font-size: 17px">{{t.applyText}}</p>
 <div class="rv d2" style="display: flex; flex-direction: column; gap: 14px; margin-top: 8px; color: var(--head); font-size: 17px">
-<a href="tel:{{set.phone}}" style="display: flex; align-items: center; gap: 12px; text-decoration: none"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#46ABDC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg><span dir="ltr">{{set.phone}}</span></a>
+<a href="tel:{{set.phone}}" style="display: flex; align-items: center; gap: 12px; text-decoration: none"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#46ABDC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg><span dir="ltr">{{set.phoneDisplay}}</span></a>
 <div style="display: flex; align-items: center; gap: 12px"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#46ABDC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span>{{t.address}}</span></div>
-<a href="https://x.com/{{set.x}}" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 12px; text-decoration: none"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#46ABDC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16"></path><path d="M20 4L4 20"></path></svg><span dir="ltr">@{{set.x}}</span></a>
+<sc-if value="{{set.waNumber}}"><a href="{{set.waLink}}" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 12px; text-decoration: none"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#46ABDC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.7-5A8.5 8.5 0 1 1 8 19.3zM9 9.5c0 3 2.5 5.5 5.5 5.5l1.2-1.4-2-1-1 .8a4 4 0 0 1-2.1-2.1l.8-1-1-2z"></path></svg><span dir="ltr">{{set.waNumber}}</span></a></sc-if>
+<sc-if value="{{set.email}}"><a href="mailto:{{set.email}}" style="display: flex; align-items: center; gap: 12px; text-decoration: none"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#46ABDC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zM3 7l9 6 9-6"></path></svg><span dir="ltr">{{set.email}}</span></a></sc-if>
+<sc-if value="{{set.poBox}}"><div style="display: flex; align-items: center; gap: 12px"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#46ABDC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l9-5 9 5v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1zM3 8l9 6 9-6"></path></svg><span>{{t.poBoxLabel}} <span dir="ltr">{{set.poBox}}</span></span></div></sc-if>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px">
+<sc-if value="{{set.x}}"><a class="btn" href="https://x.com/{{set.x}}" target="_blank" rel="noopener" aria-label="X" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--fieldBd); text-decoration: none; font-size: 15px"><span dir="ltr">X @{{set.x}}</span></a></sc-if>
+<sc-if value="{{set.instagram}}"><a class="btn" href="https://instagram.com/{{set.instagram}}" target="_blank" rel="noopener" aria-label="Instagram" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--fieldBd); text-decoration: none; font-size: 15px"><span dir="ltr">Instagram @{{set.instagram}}</span></a></sc-if>
+<sc-if value="{{set.tiktok}}"><a class="btn" href="https://www.tiktok.com/@{{set.tiktok}}" target="_blank" rel="noopener" aria-label="TikTok" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--fieldBd); text-decoration: none; font-size: 15px"><span dir="ltr">TikTok @{{set.tiktok}}</span></a></sc-if>
+</div>
 </div>
 </div>
 <div class="rv d2" style="flex: 1 1 420px; min-width: 0; background: var(--glass); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); border: 1px solid var(--glassBd); border-radius: 22px; padding: 32px; display: flex; flex-direction: column; gap: 18px">

@@ -1,128 +1,870 @@
 {
-  "brand": { "name": "Smart Media", "tagline": "Advertising Agency", "logoAlt": "Smart Media agency logo" },
-  "nav": { "story": "Our story", "services": "Services", "work": "Our work", "packages": "Packages", "faq": "FAQ", "apply": "Apply now" },
+  "brand": {
+    "name": "Smart Media",
+    "tagline": "Advertising Agency",
+    "logoAlt": "Smart Media Advertising Agency logo"
+  },
+  "nav": {
+    "story": "About us",
+    "services": "Services",
+    "work": "Our work",
+    "packages": "Packages",
+    "faq": "FAQ",
+    "apply": "Contact us"
+  },
   "ui": {
-    "menuLabel": "Main menu", "switchLanguage": "التبديل إلى العربية", "languageButton": "ع",
-    "darkMode": "Dark mode", "lightMode": "Light mode",
-    "previous": "Previous slide", "next": "Next slide", "slide": "Slide",
-    "whatsapp": "Chat on WhatsApp", "imagePlaceholder": "[Project image]", "logoPlaceholder": "[Client logo]"
+    "menuLabel": "Main menu",
+    "switchLanguage": "التبديل إلى العربية",
+    "languageButton": "ع",
+    "darkMode": "Dark mode",
+    "lightMode": "Light mode",
+    "previous": "Previous slide",
+    "next": "Next slide",
+    "slide": "Slide",
+    "whatsapp": "Chat on WhatsApp",
+    "imagePlaceholder": "[Project image]",
+    "logoPlaceholder": "[Client logo]",
+    "view": "View",
+    "more": "Show more work",
+    "poBoxLabel": "P.O. Box"
   },
   "hero": {
     "slides": [
-      { "eyebrow": "Marketing & advertising agency in Jeddah", "line1": "We turn ideas", "line2": "into reality", "text": "We design professional websites and run your social media ad campaigns." },
-      { "eyebrow": "Web design & development", "line1": "Websites", "line2": "that sell for you", "text": "Fast, mobile-friendly websites and stores that make a professional first impression." },
-      { "eyebrow": "Ad campaigns", "line1": "Campaigns that reach", "line2": "the right customers", "text": "Well-planned campaigns on Snapchat, TikTok, Instagram and Google, with results you can measure." }
+      {
+        "eyebrow": "Advertising • Marketing • Public relations • Corporate gifts",
+        "line1": "We turn ideas",
+        "line2": "into reality",
+        "text": "An advertising agency in Jeddah offering integrated marketing, media, advertising and public relations services, built on careful planning and long experience."
+      },
+      {
+        "eyebrow": "Billboards & signage",
+        "line1": "Be seen",
+        "line2": "from afar",
+        "text": "Digital screens, unipoles and mupis, cladding, 3D letters, neon signs and vehicle branding."
+      },
+      {
+        "eyebrow": "Exhibitions & events",
+        "line1": "Events",
+        "line2": "that leave a mark",
+        "text": "We organize community programs, competitions, marathons and championships, and design and build exhibitions and booths for public and private organizations."
+      },
+      {
+        "eyebrow": "Web design & development",
+        "line1": "Your website,",
+        "line2": "your digital storefront",
+        "text": "Professional, mobile-friendly websites in Arabic and English that complete your brand’s presence."
+      }
     ],
     "tickerIntro": "We're here to",
-    "ticker": [ { "text": "design your site" }, { "text": "launch your campaign" }, { "text": "build your brand" } ],
-    "button": "Send a request",
+    "ticker": [
+      {
+        "text": "launch your campaign"
+      },
+      {
+        "text": "run your event"
+      },
+      {
+        "text": "build your brand"
+      },
+      {
+        "text": "design your website"
+      }
+    ],
+    "button": "Request a service",
     "secondButton": "About us"
   },
   "strips": {
-    "top": [ { "text": "Web design" }, { "text": "Online stores" }, { "text": "Ad campaigns" }, { "text": "Social media" }, { "text": "Branding" }, { "text": "Photo & video" }, { "text": "SEO" } ],
-    "bottom": [ { "text": "We turn ideas into reality" }, { "text": "Jeddah" }, { "text": "Smart Media" }, { "text": "Apply now" }, { "text": "Your growth partner" } ]
+    "top": [
+      {
+        "text": "Advertising"
+      },
+      {
+        "text": "Marketing"
+      },
+      {
+        "text": "Public relations"
+      },
+      {
+        "text": "Corporate gifts"
+      },
+      {
+        "text": "Billboards"
+      },
+      {
+        "text": "Exhibitions & events"
+      },
+      {
+        "text": "Promo & photography"
+      },
+      {
+        "text": "Web design"
+      }
+    ],
+    "bottom": [
+      {
+        "text": "We turn ideas into reality"
+      },
+      {
+        "text": "Integrity"
+      },
+      {
+        "text": "Honesty"
+      },
+      {
+        "text": "Trust"
+      },
+      {
+        "text": "Creativity"
+      }
+    ]
   },
   "story": {
-    "label": "Our story",
-    "title": "It started with an idea, now we are your growth partner",
-    "paragraph1": "Smart Media Advertising Agency started in Jeddah in [year founded] with a simple goal: helping businesses reach their customers in a smart, well-planned way.",
-    "paragraph2": "[Write how the agency started and its key milestones here.]",
+    "label": "About us",
+    "title": "A full-service agency, from idea to execution",
+    "paragraph1": "An advertising agency specialized in integrated marketing, media, advertising and public relations services, built on careful planning, thorough preparation and accumulated experience, delivering creative ideas and programs that improve an organization’s image and help it reach its goals.",
+    "paragraph2": "We have been honored to serve leading government entities, companies and charities in Jeddah, Makkah and Madinah, from ministries, municipalities and universities to hospitals and consumer brands.",
     "stats": [
-      { "number": "[No.]+", "label": "Projects delivered" },
-      { "number": "[No.]+", "label": "Happy clients" },
-      { "number": "[No.]", "label": "Years of experience" },
-      { "number": "[No.]", "label": "Ad campaigns" }
+      {
+        "number": "60+",
+        "label": "Success partners from the public and private sectors"
+      },
+      {
+        "number": "15+",
+        "label": "Community programs and initiatives"
+      },
+      {
+        "number": "12+",
+        "label": "Areas of advertising and marketing services"
+      }
     ],
     "values": [
-      { "title": "Our vision", "text": "[The agency vision in one or two sentences]" },
-      { "title": "Our mission", "text": "[The agency mission in one or two sentences]" },
-      { "title": "Our values", "text": "[The values that set your work apart]" }
+      {
+        "title": "Our vision",
+        "text": "To be the first marketing, media and advertising destination for businesses of every kind."
+      },
+      {
+        "title": "Our mission",
+        "text": "Delivering marketing, media and advertising services of outstanding quality and innovative solutions, through specialized work and complementary partnerships."
+      },
+      {
+        "title": "Our values",
+        "text": "Integrity, honesty, trust and creativity."
+      },
+      {
+        "title": "Our slogan",
+        "text": "We turn ideas into reality."
+      }
     ]
   },
   "services": {
     "label": "Our services",
-    "title": "Everything your business needs to shine online",
+    "title": "Integrated marketing, advertising and PR services",
     "items": [
-      { "icon": "web", "title": "Web design & development", "text": "Business websites and online stores: fast, mobile-friendly, in Arabic and English." },
-      { "icon": "ads", "title": "Ad campaigns", "text": "Paid campaigns on Snapchat, TikTok, Instagram, X and Google, with results tracked as they come in." },
-      { "icon": "social", "title": "Social media management", "text": "A monthly content plan, post designs, scheduling, and a performance report every month." },
-      { "icon": "brand", "title": "Branding & design", "text": "Logos, full brand identities, ad designs and print that reflect who you are." },
-      { "icon": "video", "title": "Photo & content creation", "text": "Product photography, short videos (Reels and TikTok) and motion graphics." },
-      { "icon": "seo", "title": "Google visibility (SEO)", "text": "Optimizing your site to show up in search, plus setting up your Google Maps listing." }
+      {
+        "icon": "ads",
+        "title": "Marketing & ad campaigns",
+        "text": "Planning and running marketing and awareness campaigns, and securing sponsorships for programs and events."
+      },
+      {
+        "icon": "event",
+        "title": "Public relations & events",
+        "text": "Organizing programs, events, workshops, competitions, championships and marathons."
+      },
+      {
+        "icon": "sign",
+        "title": "Billboards & signage",
+        "text": "Digital screens, unipoles, mupis, cladding, 3D letters, neon signs and vehicle branding."
+      },
+      {
+        "icon": "booth",
+        "title": "Exhibitions & booths",
+        "text": "Designing and building awareness exhibitions and booths, plus digital and virtual exhibitions."
+      },
+      {
+        "icon": "video",
+        "title": "Promo videos & photography",
+        "text": "Short promo films and documentaries, and photography of events, facilities, real estate and products."
+      },
+      {
+        "icon": "social",
+        "title": "Social media content",
+        "text": "Managing social media content for organizations and campaigns."
+      },
+      {
+        "icon": "brand",
+        "title": "Branding & print",
+        "text": "Logos and brand identity, business stationery, profiles, agendas, annual reports and cards."
+      },
+      {
+        "icon": "gift",
+        "title": "Promotional gifts & trophies",
+        "text": "Bags, calendars, pens, keychains, gift sets, crystal and wooden plaques, cups and models."
+      },
+      {
+        "icon": "web",
+        "title": "Web design & development",
+        "text": "Fast, mobile-friendly business websites and online stores in Arabic and English."
+      }
     ]
   },
   "process": {
     "label": "How we work",
     "title": "Four steps from idea to launch",
     "steps": [
-      { "title": "We listen", "text": "A short session to understand your business, goals and audience." },
-      { "title": "We plan & design", "text": "We prepare the design and plan and show you before we build." },
-      { "title": "We build & launch", "text": "We build the site or launch the campaign after your final approval." },
-      { "title": "We follow up", "text": "Post-launch support and reports that help you make better decisions." }
+      {
+        "title": "We listen",
+        "text": "We understand your business, goals and audience."
+      },
+      {
+        "title": "We plan & design",
+        "text": "We prepare the plan and designs and show you before we execute."
+      },
+      {
+        "title": "We execute",
+        "text": "We deliver the campaign, event or sign after your approval."
+      },
+      {
+        "title": "We follow up",
+        "text": "We track the results and stay with you after delivery."
+      }
     ]
   },
   "work": {
     "label": "Our work",
     "title": "Projects we're proud of",
-    "filters": { "all": "All", "web": "Websites", "social": "Social media", "brand": "Branding" },
+    "filters": [
+      {
+        "id": "all",
+        "label": "All"
+      },
+      {
+        "id": "signs",
+        "label": "Signs & wraps"
+      },
+      {
+        "id": "events",
+        "label": "Exhibitions & booths"
+      },
+      {
+        "id": "programs",
+        "label": "Programs & events"
+      },
+      {
+        "id": "media",
+        "label": "Promo & content"
+      },
+      {
+        "id": "brand",
+        "label": "Design & print"
+      }
+    ],
     "items": [
-      { "name": "[Project name]", "category": "Website", "type": "web", "image": "" },
-      { "name": "[Project name]", "category": "Social media campaign", "type": "social", "image": "" },
-      { "name": "[Project name]", "category": "Brand identity", "type": "brand", "image": "" },
-      { "name": "[Project name]", "category": "Online store", "type": "web", "image": "" },
-      { "name": "[Project name]", "category": "Account management", "type": "social", "image": "" },
-      { "name": "[Project name]", "category": "Logo design", "type": "brand", "image": "" }
+      {
+        "name": "Storefront sign",
+        "category": "Illuminated shop sign",
+        "type": "signs",
+        "image": "media/work/sign-storefront.jpg",
+        "link": ""
+      },
+      {
+        "name": "3D letter sign",
+        "category": "Raised illuminated letters",
+        "type": "signs",
+        "image": "media/work/sign-3d-letters.jpg",
+        "link": ""
+      },
+      {
+        "name": "Neon sign",
+        "category": "Neon",
+        "type": "signs",
+        "image": "media/work/sign-neon.jpg",
+        "link": ""
+      },
+      {
+        "name": "Cladding facade",
+        "category": "Cladding panels",
+        "type": "signs",
+        "image": "media/work/sign-cladding.jpg",
+        "link": ""
+      },
+      {
+        "name": "Hajj pilgrims water program",
+        "category": "Truck wrap",
+        "type": "signs",
+        "image": "media/work/vehicle-hajj-water-truck.jpg",
+        "link": ""
+      },
+      {
+        "name": "Water delivery truck",
+        "category": "Truck wrap",
+        "type": "signs",
+        "image": "media/work/vehicle-water-truck.jpg",
+        "link": ""
+      },
+      {
+        "name": "Smart Media bus",
+        "category": "Bus branding",
+        "type": "signs",
+        "image": "media/work/vehicle-bus.jpg",
+        "link": ""
+      },
+      {
+        "name": "Qatrat Al Hayat",
+        "category": "Van wrap",
+        "type": "signs",
+        "image": "media/work/vehicle-van.jpg",
+        "link": ""
+      },
+      {
+        "name": "Exhibition booth design",
+        "category": "Booths",
+        "type": "events",
+        "image": "media/work/booth-design.jpg",
+        "link": ""
+      },
+      {
+        "name": "Anti-drugs exhibition – Jeddah",
+        "category": "Awareness exhibition",
+        "type": "events",
+        "image": "media/work/booth-jeddah-anti-drugs.jpg",
+        "link": ""
+      },
+      {
+        "name": "Anti-drugs exhibition – Makkah",
+        "category": "Awareness exhibition",
+        "type": "events",
+        "image": "media/work/booth-makkah-anti-drugs.jpg",
+        "link": ""
+      },
+      {
+        "name": "Intellectual Security exhibition",
+        "category": "Awareness exhibition",
+        "type": "events",
+        "image": "media/work/booth-intellectual-security.jpg",
+        "link": ""
+      },
+      {
+        "name": "“Prayer is Light” campaign exhibition",
+        "category": "Awareness exhibition",
+        "type": "events",
+        "image": "media/work/booth-prayer-campaign.jpg",
+        "link": ""
+      },
+      {
+        "name": "Cultural Park on the Waterfront",
+        "category": "Community program",
+        "type": "programs",
+        "image": "media/work/program-cultural-park.jpg",
+        "link": "https://2u.pw/SHnWk5qc"
+      },
+      {
+        "name": "Saudi Green Initiative",
+        "category": "Community program",
+        "type": "programs",
+        "image": "media/work/program-green-saudi.jpg",
+        "link": "https://2u.pw/oF13pp7e"
+      },
+      {
+        "name": "Holy Makkah Municipality Ramadan table for workers 1445",
+        "category": "Ramadan initiative",
+        "type": "programs",
+        "image": "media/work/program-ramadan-workers.jpg",
+        "link": "https://2u.pw/rNLwCxz6"
+      },
+      {
+        "name": "Holy Makkah Municipality Ramadan table for orphans 1445",
+        "category": "Ramadan initiative",
+        "type": "programs",
+        "image": "media/work/program-ramadan-orphans.jpg",
+        "link": "https://2u.pw/wn32GYwi"
+      },
+      {
+        "name": "Narcotics Control iftar meals initiative",
+        "category": "Ramadan initiative",
+        "type": "programs",
+        "image": "media/work/program-iftar.jpg",
+        "link": "https://2u.pw/jumHhrZ1"
+      },
+      {
+        "name": "Holy Makkah Municipality Football Championship",
+        "category": "Sports championship",
+        "type": "programs",
+        "image": "media/work/program-makkah-football.jpg",
+        "link": "https://2u.pw/yd3S6FVw"
+      },
+      {
+        "name": "Jeddah Municipality Football Championship",
+        "category": "Sports championship",
+        "type": "programs",
+        "image": "media/work/program-jeddah-football.jpg",
+        "link": "https://2u.pw/9amOS2T8"
+      },
+      {
+        "name": "“Watanna Amana” Football Championship",
+        "category": "Sports championship",
+        "type": "programs",
+        "image": "media/work/program-watanna-cup.jpg",
+        "link": "https://www.spa.gov.sa/1595088"
+      },
+      {
+        "name": "Jeddah Municipality youth league (Watan League)",
+        "category": "Sports championship",
+        "type": "programs",
+        "image": "media/work/program-watan-league.jpg",
+        "link": "https://2u.pw/0PSMRt7D"
+      },
+      {
+        "name": "1st Al-Hamdaniya Marathon",
+        "category": "Marathon",
+        "type": "programs",
+        "image": "media/work/program-hamdaniya-1.jpg",
+        "link": "https://2u.pw/9WiztQXg"
+      },
+      {
+        "name": "3rd Al-Hamdaniya Marathon",
+        "category": "Marathon",
+        "type": "programs",
+        "image": "media/work/program-hamdaniya-3.jpg",
+        "link": "https://2u.pw/Talm8ziH"
+      },
+      {
+        "name": "“Al-Nahr Al-Jari” campaign – Jeddah",
+        "category": "Promo videos",
+        "type": "media",
+        "image": "media/work/media-nahr-jari.jpg",
+        "link": "https://youtube.com/user/nahrjari"
+      },
+      {
+        "name": "Awareness activities – Makkah Region branch",
+        "category": "Content management",
+        "type": "media",
+        "image": "media/work/media-awareness-x.jpg",
+        "link": "https://x.com/mnashettawawyah"
+      },
+      {
+        "name": "Virtual exhibition – Narcotics Control, Makkah",
+        "category": "Digital exhibition",
+        "type": "media",
+        "image": "media/work/media-digital-exhibition.jpg",
+        "link": ""
+      },
+      {
+        "name": "Logos & brand identity",
+        "category": "Professional design",
+        "type": "brand",
+        "image": "media/work/brand-logos.jpg",
+        "link": ""
+      },
+      {
+        "name": "Business stationery",
+        "category": "Print",
+        "type": "brand",
+        "image": "media/work/brand-stationery.jpg",
+        "link": ""
+      },
+      {
+        "name": "Profiles, agendas, annual reports & cards",
+        "category": "Publications",
+        "type": "brand",
+        "image": "media/work/brand-publications.jpg",
+        "link": ""
+      },
+      {
+        "name": "Holy Makkah Municipality championship cup",
+        "category": "Trophies & awards",
+        "type": "brand",
+        "image": "media/work/brand-trophy.jpg",
+        "link": ""
+      }
     ]
   },
   "packages": {
-    "label": "Packages",
-    "title": "Pick the package that fits you",
+    "label": "Website packages",
+    "title": "Web design packages",
     "popularBadge": "Most popular",
     "button": "Choose package",
     "currency": "SAR",
     "perMonth": "SAR / month",
     "items": [
-      { "title": "Business website", "text": "For companies and shops that want a professional presence.", "price": "[Price]", "monthly": false, "featured": false,
-        "features": [ { "text": "Up to [number] pages" }, { "text": "Mobile-friendly design" }, { "text": "WhatsApp button and contact form" }, { "text": "Google Maps integration" } ] },
-      { "title": "Online store", "text": "Sell your products online with ease.", "price": "[Price]", "monthly": false, "featured": true,
-        "features": [ { "text": "Dashboard to manage products" }, { "text": "Payment gateway integration" }, { "text": "Shipping company integration" }, { "text": "Store management training" } ] },
-      { "title": "Social media package", "text": "Your accounts and campaigns, managed monthly.", "price": "[Price]", "monthly": true, "featured": false,
-        "features": [ { "text": "[number] post designs per month" }, { "text": "One paid ad campaign managed" }, { "text": "Replies to messages and comments" }, { "text": "Monthly performance report" } ] }
+      {
+        "title": "Business website",
+        "text": "For companies and shops that want a professional presence.",
+        "price": "[Price]",
+        "monthly": false,
+        "featured": false,
+        "features": [
+          {
+            "text": "Up to [number] pages"
+          },
+          {
+            "text": "Mobile-friendly design"
+          },
+          {
+            "text": "WhatsApp button and contact form"
+          },
+          {
+            "text": "Google Maps integration"
+          }
+        ]
+      },
+      {
+        "title": "Online store",
+        "text": "Sell your products online with ease.",
+        "price": "[Price]",
+        "monthly": false,
+        "featured": true,
+        "features": [
+          {
+            "text": "Dashboard to manage products"
+          },
+          {
+            "text": "Payment gateway integration"
+          },
+          {
+            "text": "Shipping company integration"
+          },
+          {
+            "text": "Store management training"
+          }
+        ]
+      },
+      {
+        "title": "Social media package",
+        "text": "Your accounts and campaigns, managed monthly.",
+        "price": "[Price]",
+        "monthly": true,
+        "featured": false,
+        "features": [
+          {
+            "text": "[number] post designs per month"
+          },
+          {
+            "text": "One paid ad campaign managed"
+          },
+          {
+            "text": "Replies to messages and comments"
+          },
+          {
+            "text": "Monthly performance report"
+          }
+        ]
+      }
     ]
   },
   "clients": {
     "label": "Our clients",
-    "title": "What they say about us",
-    "logos": [ { "name": "[Client logo]", "image": "" }, { "name": "[Client logo]", "image": "" }, { "name": "[Client logo]", "image": "" }, { "name": "[Client logo]", "image": "" }, { "name": "[Client logo]", "image": "" }, { "name": "[Client logo]", "image": "" } ],
-    "reviews": [
-      { "text": "[Client review of working with you]", "name": "[Client name]", "business": "[Business]" },
-      { "text": "[Client review of working with you]", "name": "[Client name]", "business": "[Business]" },
-      { "text": "[Client review of working with you]", "name": "[Client name]", "business": "[Business]" }
-    ]
+    "title": "Our success partners",
+    "logos": [
+      {
+        "name": "Government entity",
+        "image": "media/clients/client-01.jpg"
+      },
+      {
+        "name": "Ministry of Hajj and Umrah",
+        "image": "media/clients/client-02.jpg"
+      },
+      {
+        "name": "Ministry of Human Resources and Social Development",
+        "image": "media/clients/client-03.jpg"
+      },
+      {
+        "name": "Jeddah Governorate",
+        "image": "media/clients/client-04.jpg"
+      },
+      {
+        "name": "Makkah Region Principality",
+        "image": "media/clients/client-05.jpg"
+      },
+      {
+        "name": "Security agency",
+        "image": "media/clients/client-06.jpg"
+      },
+      {
+        "name": "Facilities Security Forces",
+        "image": "media/clients/client-07.jpg"
+      },
+      {
+        "name": "General Presidency for the Promotion of Virtue and Prevention of Vice",
+        "image": "media/clients/client-08.jpg"
+      },
+      {
+        "name": "Ministry of Transport and Logistic Services",
+        "image": "media/clients/client-09.jpg"
+      },
+      {
+        "name": "Ministry of Education – Jeddah",
+        "image": "media/clients/client-10.jpg"
+      },
+      {
+        "name": "King Abdulaziz University",
+        "image": "media/clients/client-11.jpg"
+      },
+      {
+        "name": "Jeddah Municipality",
+        "image": "media/clients/client-12.jpg"
+      },
+      {
+        "name": "Holy Makkah Municipality",
+        "image": "media/clients/client-13.jpg"
+      },
+      {
+        "name": "General Directorate of Passports",
+        "image": "media/clients/client-14.jpg"
+      },
+      {
+        "name": "General Directorate of Narcotics Control",
+        "image": "media/clients/client-15.jpg"
+      },
+      {
+        "name": "Indomie",
+        "image": "media/clients/client-16.jpg"
+      },
+      {
+        "name": "Albaik",
+        "image": "media/clients/client-17.jpg"
+      },
+      {
+        "name": "Neighborhood Centers Association – Makkah Region",
+        "image": "media/clients/client-18.jpg"
+      },
+      {
+        "name": "University of Business and Technology",
+        "image": "media/clients/client-19.jpg"
+      },
+      {
+        "name": "Umm Al-Qura University",
+        "image": "media/clients/client-20.jpg"
+      },
+      {
+        "name": "Mohammed Saleh Basharahil Hospital",
+        "image": "media/clients/client-21.jpg"
+      },
+      {
+        "name": "Abdullah Hashim Company Ltd.",
+        "image": "media/clients/client-22.jpg"
+      },
+      {
+        "name": "Haji Husein Alireza & Co. Ltd.",
+        "image": "media/clients/client-23.jpg"
+      },
+      {
+        "name": "Mohamed Yousuf Naghi Motors Co.",
+        "image": "media/clients/client-24.jpg"
+      },
+      {
+        "name": "Jeddah Second Health Cluster",
+        "image": "media/clients/client-25.jpg"
+      },
+      {
+        "name": "Hafil",
+        "image": "media/clients/client-26.jpg"
+      },
+      {
+        "name": "Aqarat Real Estate Development Co.",
+        "image": "media/clients/client-27.jpg"
+      },
+      {
+        "name": "Saudi German Hospital",
+        "image": "media/clients/client-28.jpg"
+      },
+      {
+        "name": "Andalusia Hospital",
+        "image": "media/clients/client-29.jpg"
+      },
+      {
+        "name": "Fakeeh Care",
+        "image": "media/clients/client-30.jpg"
+      },
+      {
+        "name": "Al Ebreez Al Naqi Gold & Jewellery",
+        "image": "media/clients/client-31.jpg"
+      },
+      {
+        "name": "Azzam Al-Shareef Co.",
+        "image": "media/clients/client-32.jpg"
+      },
+      {
+        "name": "Mohammed Al Kendi Holding Group",
+        "image": "media/clients/client-33.jpg"
+      },
+      {
+        "name": "Jewellery client",
+        "image": "media/clients/client-34.jpg"
+      },
+      {
+        "name": "Mansour",
+        "image": "media/clients/client-35.jpg"
+      },
+      {
+        "name": "Dansat",
+        "image": "media/clients/client-36.jpg"
+      },
+      {
+        "name": "Tamr",
+        "image": "media/clients/client-37.jpg"
+      },
+      {
+        "name": "Al-Otair Trading Group",
+        "image": "media/clients/client-38.jpg"
+      },
+      {
+        "name": "Makkiyoun",
+        "image": "media/clients/client-39.jpg"
+      },
+      {
+        "name": "Jeddah Gate Gold",
+        "image": "media/clients/client-40.jpg"
+      },
+      {
+        "name": "Mohamad Abdul Samad Al Qurashi Group",
+        "image": "media/clients/client-41.jpg"
+      },
+      {
+        "name": "Mashariq",
+        "image": "media/clients/client-42.jpg"
+      },
+      {
+        "name": "Company of Mutawifs for Pilgrims from African Non-Arab Countries",
+        "image": "media/clients/client-43.jpg"
+      },
+      {
+        "name": "Al Bait Guests",
+        "image": "media/clients/client-44.jpg"
+      },
+      {
+        "name": "Masar",
+        "image": "media/clients/client-45.jpg"
+      },
+      {
+        "name": "Qatrat Al Hayat",
+        "image": "media/clients/client-46.jpg"
+      },
+      {
+        "name": "Mansour Bin Saniah Charitable Foundation",
+        "image": "media/clients/client-47.jpg"
+      },
+      {
+        "name": "AlKhair",
+        "image": "media/clients/client-48.jpg"
+      },
+      {
+        "name": "Balbaid Decor",
+        "image": "media/clients/client-49.jpg"
+      },
+      {
+        "name": "Bin Dawood Holding – Danube",
+        "image": "media/clients/client-50.jpg"
+      },
+      {
+        "name": "Charity association",
+        "image": "media/clients/client-51.jpg"
+      },
+      {
+        "name": "Charity association",
+        "image": "media/clients/client-52.jpg"
+      },
+      {
+        "name": "National Committee for the Care of Prisoners, Released Prisoners and their Families – Makkah",
+        "image": "media/clients/client-53.jpg"
+      },
+      {
+        "name": "Kafa Association",
+        "image": "media/clients/client-54.jpg"
+      },
+      {
+        "name": "Khairukum – Quran Memorization Society, Jeddah",
+        "image": "media/clients/client-55.jpg"
+      },
+      {
+        "name": "Success partner",
+        "image": "media/clients/client-56.jpg"
+      },
+      {
+        "name": "Junior",
+        "image": "media/clients/client-57.jpg"
+      },
+      {
+        "name": "Fatima Hussein Ali Reza Mosque",
+        "image": "media/clients/client-58.jpg"
+      },
+      {
+        "name": "Balbaid Quran Complex",
+        "image": "media/clients/client-59.jpg"
+      },
+      {
+        "name": "Wadi Sitarah Villages Charity Association",
+        "image": "media/clients/client-60.jpg"
+      }
+    ],
+    "reviews": []
   },
   "faq": {
     "label": "FAQ",
     "title": "Got a question?",
     "items": [
-      { "question": "How long does a website take?", "answer": "[Write the answer here]" },
-      { "question": "Are the domain and hosting included?", "answer": "[Write the answer here]" },
-      { "question": "Can I edit the website myself after delivery?", "answer": "[Write the answer here]" },
-      { "question": "How do I see my campaign results?", "answer": "[Write the answer here]" },
-      { "question": "What payment methods do you accept?", "answer": "[Write the answer here]" }
+      {
+        "question": "What services do you offer?",
+        "answer": "Integrated marketing, advertising and PR services: marketing campaigns, programs, events and workshops, billboards and signage, exhibitions and booths, promo videos and photography, social media content, print, promotional gifts and trophies, and web design."
+      },
+      {
+        "question": "Do you work with government entities?",
+        "answer": "Yes. Our clients include ministries, municipalities, universities and government bodies in Jeddah, Makkah and Madinah, alongside companies and charities."
+      },
+      {
+        "question": "Can you produce gifts and trophies with our logo?",
+        "answer": "Yes. We supply promotional gifts (bags, calendars, pens, keychains, gift sets) as well as plaques, cups and models designed for your organization."
+      },
+      {
+        "question": "Where are you and how can I reach you?",
+        "answer": "Our office is in Jeddah – Hail Street – Hawazen Center. Call +966 12 660 5626, message us on WhatsApp at +966 55 128 0719, or email info@sma-adv.com."
+      }
     ]
   },
   "apply": {
-    "label": "Apply now",
-    "title": "Ready to start? Send your request",
-    "text": "Fill in the form with your project details and we'll get back to you with a quote within [time].",
-    "address": "Jeddah – Hail Street",
-    "nameLabel": "Name", "namePlaceholder": "Your name",
+    "label": "Contact us",
+    "title": "Ready to start? Request a service",
+    "text": "Fill in the form with your request and it reaches us directly on WhatsApp.",
+    "address": "Jeddah – Hail Street – Hawazen Center",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your name",
     "phoneLabel": "Mobile number",
     "serviceLabel": "Service needed",
-    "messageLabel": "Project details", "messagePlaceholder": "Tell us briefly about your idea",
+    "messageLabel": "Request details",
+    "messagePlaceholder": "Tell us briefly about your idea",
     "button": "Send request",
-    "whatsappIntro": "New request from the website",
-    "serviceOptions": [ { "text": "Website design" }, { "text": "Online store" }, { "text": "Social media management" }, { "text": "Ad campaign" }, { "text": "Brand identity" }, { "text": "Photo & content" } ]
+    "whatsappIntro": "New request from the Smart Media website",
+    "serviceOptions": [
+      {
+        "text": "Marketing or ad campaign"
+      },
+      {
+        "text": "Event or program"
+      },
+      {
+        "text": "Billboards or signage"
+      },
+      {
+        "text": "Exhibition or booth"
+      },
+      {
+        "text": "Promo video or photography"
+      },
+      {
+        "text": "Social media content"
+      },
+      {
+        "text": "Branding or print"
+      },
+      {
+        "text": "Promotional gifts or trophies"
+      },
+      {
+        "text": "Website design"
+      }
+    ]
   },
-  "footer": { "copyright": "© 2026 Smart Media Advertising Agency", "slogan": "We turn ideas into reality" }
+  "footer": {
+    "copyright": "© 2026 Smart Media Advertising Agency",
+    "slogan": "We turn ideas into reality"
+  }
 }

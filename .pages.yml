@@ -14,9 +14,16 @@ content:
     path: content/settings.json
     format: json
     fields:
-      - { name: phone, label: Phone number, type: string }
-      - { name: whatsapp, label: "WhatsApp number (with country code, e.g. 9665XXXXXXXX)", type: string }
+      - { name: phone, label: "Phone number (for calling, e.g. 0126605626)", type: string }
+      - { name: phoneDisplay, label: "Phone number as shown on the site", type: string }
+      - { name: whatsapp, label: "WhatsApp number (digits with country code, e.g. 966551280719)", type: string }
+      - { name: whatsappDisplay, label: "WhatsApp number as shown on the site", type: string }
+      - { name: email, label: Email, type: string }
+      - { name: poBox, label: P.O. Box, type: string }
       - { name: xHandle, label: "X (Twitter) username, without @", type: string }
+      - { name: instagram, label: "Instagram username, without @", type: string }
+      - { name: tiktok, label: "TikTok username, without @", type: string }
+      - { name: showPackages, label: "Show the website packages section (turn on once prices are ready)", type: boolean }
       - { name: accentColor, label: "Button color (hex, e.g. #F6A528)", type: string }
       - name: defaultLanguage
         label: Language the site opens in
@@ -127,7 +134,7 @@ content:
               - name: icon
                 label: Icon
                 type: select
-                options: { values: [web, ads, social, brand, video, seo] }
+                options: { values: [ads, event, sign, booth, video, social, brand, gift, web, seo] }
               - { name: title, label: Title, type: string }
               - { name: text, label: Description, type: text }
       - name: process
@@ -150,13 +157,15 @@ content:
           - { name: label, label: Small label, type: string }
           - { name: title, label: Title, type: string }
           - name: filters
-            label: Filter buttons
+            label: Filter buttons (keep the ids as they are)
             type: object
+            list: true
             fields:
-              - { name: all, label: All, type: string }
-              - { name: web, label: Websites, type: string }
-              - { name: social, label: Social media, type: string }
-              - { name: brand, label: Branding, type: string }
+              - name: id
+                label: Group id
+                type: select
+                options: { values: [all, signs, events, programs, media, brand] }
+              - { name: label, label: Button text, type: string }
           - name: items
             label: Projects
             type: object
@@ -167,8 +176,9 @@ content:
               - name: type
                 label: Filter group
                 type: select
-                options: { values: [web, social, brand] }
+                options: { values: [signs, events, programs, media, brand] }
               - { name: image, label: Image, type: image }
+              - { name: link, label: "Link (optional: video, news or post)", type: string }
       - name: packages
         label: Packages
         type: object
@@ -266,6 +276,9 @@ content:
           - { name: whatsapp, label: WhatsApp button label, type: string }
           - { name: imagePlaceholder, label: Text shown when a project has no image, type: string }
           - { name: logoPlaceholder, label: Text shown when a client has no logo, type: string }
+          - { name: view, label: "“View” link text on projects", type: string }
+          - { name: more, label: "“Show more work” button", type: string }
+          - { name: poBoxLabel, label: P.O. Box label, type: string }
       - name: footer
         label: Footer
         type: object

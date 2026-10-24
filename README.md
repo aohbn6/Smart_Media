@@ -17,7 +17,9 @@ without touching the code, either directly or through [Pages CMS](https://pagesc
 │   └── settings.json     Phone, WhatsApp, X username, button color, default language/mode
 ├── media/
 │   ├── logo.png          Logo (round)
-│   └── logo-rays.svg     Logo rays (vector) used as the background art
+│   ├── logo-rays.svg     Logo rays (vector) used as the background art
+│   ├── work/             Portfolio images (taken from the company profile)
+│   └── clients/          Client logos (client-01.jpg … client-60.jpg)
 └── assets/
     ├── css/style.css     All styles, colors and animations
     └── js/
@@ -42,14 +44,19 @@ Keep the quotes, commas and brackets as they are.
 - Placeholders in `[brackets]` (prices, numbers, story, reviews, FAQ answers) are waiting for real information.
 - To add a project image: put the image in `media/` and set `"image": "media/your-image.jpg"` on the project in `work.items`.
 - Client logos work the same way in `clients.logos`.
-- Service icons can be: `web`, `ads`, `social`, `brand`, `video`, `seo`.
-- Project filter groups can be: `web`, `social`, `brand`.
+- Service icons can be: `ads`, `event`, `sign`, `booth`, `video`, `social`, `brand`, `gift`, `web`, `seo`.
+- Project filter groups can be: `signs`, `events`, `programs`, `media`, `brand`.
+- A project can have an optional `link` (a video, news article or post); it shows a “View ↗” link under the project.
+- The portfolio shows 9 projects first, with a “Show more work” button for the rest.
 
 ### Contact details (`content/settings.json`)
 - `whatsapp`: full number with country code, digits only, e.g. `9665XXXXXXXX`.
   When set, the floating WhatsApp button opens a chat, and the **Send request** form opens WhatsApp
   with the customer's name, phone, chosen service and details already written in the message.
   While it's empty, both fall back to calling `phone`.
+- `phoneDisplay` / `whatsappDisplay`: how the numbers are written on the site.
+- `email`, `poBox`, `instagram`, `tiktok`: shown in the contact section (leave empty to hide).
+- `showPackages`: the website packages section is hidden (`false`) until the prices are ready. Set it to `true` to show it and its menu item.
 - `accentColor`: color of the main buttons.
 - `defaultLanguage`: `ar` or `en`. `defaultTheme`: `dark` or `light`.
 
