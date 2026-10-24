@@ -1,0 +1,870 @@
+{
+  "brand": {
+    "name": "الوسائط الذكية",
+    "tagline": "للدعاية والإعلان",
+    "logoAlt": "شعار وكالة الوسائط الذكية للدعاية والإعلان"
+  },
+  "nav": {
+    "story": "من نحن",
+    "services": "خدماتنا",
+    "work": "أعمالنا",
+    "packages": "الباقات",
+    "faq": "الأسئلة",
+    "apply": "تواصل معنا"
+  },
+  "ui": {
+    "menuLabel": "القائمة الرئيسية",
+    "switchLanguage": "Switch to English",
+    "languageButton": "EN",
+    "darkMode": "الوضع الداكن",
+    "lightMode": "الوضع الفاتح",
+    "previous": "الشريحة السابقة",
+    "next": "الشريحة التالية",
+    "slide": "الشريحة",
+    "whatsapp": "تواصل عبر واتساب",
+    "imagePlaceholder": "[صورة المشروع]",
+    "logoPlaceholder": "[شعار عميل]",
+    "view": "شاهد",
+    "more": "عرض المزيد من الأعمال",
+    "poBoxLabel": "ص.ب"
+  },
+  "hero": {
+    "slides": [
+      {
+        "eyebrow": "إعلان • تسويق • علاقات عامة • هدايا تذكارية",
+        "line1": "نحوّل الفكرة",
+        "line2": "إلى واقع",
+        "text": "وكالة إعلانية في جدة، نقدّم خدمات تسويقية وإعلامية وإعلانية وعلاقات عامة متكاملة، مبنية على التخطيط المسبق والخبرة المتراكمة."
+      },
+      {
+        "eyebrow": "اللوحات الإعلانية والإرشادية",
+        "line1": "حضورك",
+        "line2": "يبان من بعيد",
+        "text": "شاشات رقمية، لوحات يونيبول وموبي، ألواح كلادينج، حروف ثلاثية الأبعاد، لوحات نيون، واستيكرات المركبات."
+      },
+      {
+        "eyebrow": "المعارض والفعاليات",
+        "line1": "فعاليات",
+        "line2": "تصنع الأثر",
+        "text": "ننظّم البرامج المجتمعية والمسابقات والماراثونات والبطولات، ونصمّم وننفّذ المعارض والبوثات للجهات الحكومية والخاصة."
+      },
+      {
+        "eyebrow": "تصميم وتطوير المواقع",
+        "line1": "موقعك",
+        "line2": "واجهتك الرقمية",
+        "text": "مواقع إلكترونية احترافية بالعربي والإنجليزي، متوافقة مع الجوال، تكمّل حضور علامتك على أرض الواقع."
+      }
+    ],
+    "tickerIntro": "إحنا هنا عشان",
+    "ticker": [
+      {
+        "text": "نطلق حملتك"
+      },
+      {
+        "text": "ننظم فعاليتك"
+      },
+      {
+        "text": "نبني علامتك"
+      },
+      {
+        "text": "نصمم موقعك"
+      }
+    ],
+    "button": "اطلب خدمتك",
+    "secondButton": "تعرّف علينا"
+  },
+  "strips": {
+    "top": [
+      {
+        "text": "إعلان"
+      },
+      {
+        "text": "تسويق"
+      },
+      {
+        "text": "علاقات عامة"
+      },
+      {
+        "text": "هدايا تذكارية"
+      },
+      {
+        "text": "لوحات إعلانية"
+      },
+      {
+        "text": "معارض وفعاليات"
+      },
+      {
+        "text": "برومو وتصوير"
+      },
+      {
+        "text": "تصميم مواقع"
+      }
+    ],
+    "bottom": [
+      {
+        "text": "نحوّل الفكرة إلى واقع"
+      },
+      {
+        "text": "الأمانة"
+      },
+      {
+        "text": "النزاهة"
+      },
+      {
+        "text": "الثقة"
+      },
+      {
+        "text": "الإبداع"
+      }
+    ]
+  },
+  "story": {
+    "label": "من نحن",
+    "title": "وكالة إعلانية متكاملة… من الفكرة إلى التنفيذ",
+    "paragraph1": "وكالة إعلانية متخصصة في تقديم خدمات تسويقية وإعلامية وإعلانية وعلاقات عامة متكاملة، تُبنى على التخطيط المسبق والإعداد الجيد والخبرة المتراكمة، لتنفيذ أفكار إبداعية وبرامج خلّاقة تُسهم في تحسين الصورة الذهنية للمنشأة وتحقيق مستهدفاتها.",
+    "paragraph2": "تشرّفنا بخدمة جهات حكومية وشركات ومؤسسات خيرية رائدة في جدة ومكة المكرمة والمدينة المنورة، من الوزارات والأمانات والجامعات إلى المستشفيات والعلامات التجارية.",
+    "stats": [
+      {
+        "number": "+٦٠",
+        "label": "شريك نجاح من القطاعين الحكومي والخاص"
+      },
+      {
+        "number": "+١٥",
+        "label": "برنامجاً ومبادرة مجتمعية"
+      },
+      {
+        "number": "+١٢",
+        "label": "مجالاً من خدمات الإعلان والتسويق"
+      }
+    ],
+    "values": [
+      {
+        "title": "رؤيتنا",
+        "text": "أن نكون وجهةً تسويقيةً وإعلاميةً وإعلانيةً أُولى لمختلف المنشآت التجارية."
+      },
+      {
+        "title": "رسالتنا",
+        "text": "تقديم خدمات تسويقية وإعلامية وإعلانية بجودة فائقة، وحلول ابتكارية، من خلال مهام تخصصية وشراكات تكاملية."
+      },
+      {
+        "title": "قيمنا",
+        "text": "الأمانة، النزاهة، الثقة، الإبداع."
+      },
+      {
+        "title": "شعارنا",
+        "text": "نحوّل الفكرة إلى واقع."
+      }
+    ]
+  },
+  "services": {
+    "label": "خدماتنا",
+    "title": "خدمات متكاملة في التسويق والدعاية والإعلان",
+    "items": [
+      {
+        "icon": "ads",
+        "title": "الحملات التسويقية والإعلانية",
+        "text": "تخطيط وتنفيذ الحملات التسويقية والتوعوية، وجلب الرعايات للبرامج والفعاليات."
+      },
+      {
+        "icon": "event",
+        "title": "العلاقات العامة والفعاليات",
+        "text": "تنظيم البرامج والفعاليات وورش العمل والمسابقات والبطولات والماراثونات."
+      },
+      {
+        "icon": "sign",
+        "title": "اللوحات الإعلانية والإرشادية",
+        "text": "شاشات رقمية، يونيبول، موبي، ألواح كلادينج، حروف ثلاثية الأبعاد، لوحات نيون، واستيكرات المركبات."
+      },
+      {
+        "icon": "booth",
+        "title": "المعارض والبوثات",
+        "text": "تصميم وتنفيذ المعارض التوعوية والبوثات، والمعارض الرقمية والافتراضية."
+      },
+      {
+        "icon": "video",
+        "title": "البرومو والتصوير الاحترافي",
+        "text": "إنتاج الأفلام القصيرة (برومو) والأفلام الوثائقية، وتصوير المناسبات والمنشآت والعقارات والمنتجات."
+      },
+      {
+        "icon": "social",
+        "title": "إدارة محتوى التواصل الاجتماعي",
+        "text": "إدارة محتوى حسابات التواصل الاجتماعي للجهات والحملات."
+      },
+      {
+        "icon": "brand",
+        "title": "الهوية البصرية والمطبوعات",
+        "text": "الشعارات والهوية البصرية، المطبوعات التجارية، البروفايلات، الأجندات، التقارير السنوية والكروت."
+      },
+      {
+        "icon": "gift",
+        "title": "الهدايا الدعائية والدروع",
+        "text": "أكياس قماشية وورقية، تقاويم، أقلام، ميداليات، أطقم هدايا، دروع كريستال وخشبية، كؤوس ومجسمات."
+      },
+      {
+        "icon": "web",
+        "title": "تصميم وتطوير المواقع",
+        "text": "مواقع تعريفية ومتاجر إلكترونية سريعة ومتوافقة مع الجوال، بالعربي والإنجليزي."
+      }
+    ]
+  },
+  "process": {
+    "label": "طريقة العمل",
+    "title": "أربع خطوات من الفكرة إلى الإطلاق",
+    "steps": [
+      {
+        "title": "نسمع فكرتك",
+        "text": "نفهم نشاطك وأهدافك وجمهورك المستهدف."
+      },
+      {
+        "title": "نخطط ونصمم",
+        "text": "نجهّز الخطة والتصاميم ونعرضها عليك قبل التنفيذ."
+      },
+      {
+        "title": "ننفذ",
+        "text": "ننفّذ الحملة أو الفعالية أو اللوحة بعد موافقتك."
+      },
+      {
+        "title": "نتابع",
+        "text": "نتابع النتائج ونبقى معك بعد التنفيذ."
+      }
+    ]
+  },
+  "work": {
+    "label": "من أعمالنا",
+    "title": "مشاريع نفخر فيها",
+    "filters": [
+      {
+        "id": "all",
+        "label": "الكل"
+      },
+      {
+        "id": "signs",
+        "label": "لوحات وملصقات"
+      },
+      {
+        "id": "events",
+        "label": "معارض وبوثات"
+      },
+      {
+        "id": "programs",
+        "label": "برامج وفعاليات"
+      },
+      {
+        "id": "media",
+        "label": "برومو ومحتوى"
+      },
+      {
+        "id": "brand",
+        "label": "تصميم ومطبوعات"
+      }
+    ],
+    "items": [
+      {
+        "name": "لوحة واجهة محل تجاري",
+        "category": "لوحات إرشادية مضيئة",
+        "type": "signs",
+        "image": "media/work/sign-storefront.jpg",
+        "link": ""
+      },
+      {
+        "name": "لوحة حروف ثلاثية الأبعاد",
+        "category": "حروف بارزة مضيئة",
+        "type": "signs",
+        "image": "media/work/sign-3d-letters.jpg",
+        "link": ""
+      },
+      {
+        "name": "لوحة نيون",
+        "category": "لوحات نيون",
+        "type": "signs",
+        "image": "media/work/sign-neon.jpg",
+        "link": ""
+      },
+      {
+        "name": "واجهة ألواح كلادينج",
+        "category": "ألواح كلادينج",
+        "type": "signs",
+        "image": "media/work/sign-cladding.jpg",
+        "link": ""
+      },
+      {
+        "name": "سقيا حجاج بيت الله الحرام",
+        "category": "استيكرات شاحنة",
+        "type": "signs",
+        "image": "media/work/vehicle-hajj-water-truck.jpg",
+        "link": ""
+      },
+      {
+        "name": "شاحنة توزيع مياه",
+        "category": "استيكرات شاحنة",
+        "type": "signs",
+        "image": "media/work/vehicle-water-truck.jpg",
+        "link": ""
+      },
+      {
+        "name": "حافلة وكالة الوسائط الذكية",
+        "category": "استيكرات حافلة",
+        "type": "signs",
+        "image": "media/work/vehicle-bus.jpg",
+        "link": ""
+      },
+      {
+        "name": "قطرة الحياة التجارية",
+        "category": "استيكرات مركبة",
+        "type": "signs",
+        "image": "media/work/vehicle-van.jpg",
+        "link": ""
+      },
+      {
+        "name": "تصميم بوث معرض",
+        "category": "البوثات",
+        "type": "events",
+        "image": "media/work/booth-design.jpg",
+        "link": ""
+      },
+      {
+        "name": "معرض مكافحة المخدرات بمحافظة جدة",
+        "category": "معارض توعوية",
+        "type": "events",
+        "image": "media/work/booth-jeddah-anti-drugs.jpg",
+        "link": ""
+      },
+      {
+        "name": "معرض مكافحة المخدرات بالعاصمة المقدسة",
+        "category": "معارض توعوية",
+        "type": "events",
+        "image": "media/work/booth-makkah-anti-drugs.jpg",
+        "link": ""
+      },
+      {
+        "name": "معرض هيئة الأمر بالمعروف – «الأمن الفكري»",
+        "category": "معارض توعوية",
+        "type": "events",
+        "image": "media/work/booth-intellectual-security.jpg",
+        "link": ""
+      },
+      {
+        "name": "معرض هيئة الأمر بالمعروف – «حملة الصلاة نور»",
+        "category": "معارض توعوية",
+        "type": "events",
+        "image": "media/work/booth-prayer-campaign.jpg",
+        "link": ""
+      },
+      {
+        "name": "الحديقة الثقافية بالواجهة البحرية",
+        "category": "برامج مجتمعية",
+        "type": "programs",
+        "image": "media/work/program-cultural-park.jpg",
+        "link": "https://2u.pw/SHnWk5qc"
+      },
+      {
+        "name": "مبادرة السعودية الخضراء",
+        "category": "برامج مجتمعية",
+        "type": "programs",
+        "image": "media/work/program-green-saudi.jpg",
+        "link": "https://2u.pw/oF13pp7e"
+      },
+      {
+        "name": "مائدة أمانة العاصمة المقدسة الرمضانية لعمال الأمانة ١٤٤٥",
+        "category": "مبادرات رمضانية",
+        "type": "programs",
+        "image": "media/work/program-ramadan-workers.jpg",
+        "link": "https://2u.pw/rNLwCxz6"
+      },
+      {
+        "name": "مائدة أمانة العاصمة المقدسة الرمضانية للأيتام ١٤٤٥",
+        "category": "مبادرات رمضانية",
+        "type": "programs",
+        "image": "media/work/program-ramadan-orphans.jpg",
+        "link": "https://2u.pw/wn32GYwi"
+      },
+      {
+        "name": "مبادرة مكافحة المخدرات لتوزيع وجبات إفطار صائم",
+        "category": "مبادرات رمضانية",
+        "type": "programs",
+        "image": "media/work/program-iftar.jpg",
+        "link": "https://2u.pw/jumHhrZ1"
+      },
+      {
+        "name": "بطولة أمانة العاصمة المقدسة لكرة القدم",
+        "category": "بطولات رياضية",
+        "type": "programs",
+        "image": "media/work/program-makkah-football.jpg",
+        "link": "https://2u.pw/yd3S6FVw"
+      },
+      {
+        "name": "بطولة أمانة محافظة جدة لكرة القدم",
+        "category": "بطولات رياضية",
+        "type": "programs",
+        "image": "media/work/program-jeddah-football.jpg",
+        "link": "https://2u.pw/9amOS2T8"
+      },
+      {
+        "name": "بطولة «وطننا أمانة» لكرة القدم",
+        "category": "بطولات رياضية",
+        "type": "programs",
+        "image": "media/work/program-watanna-cup.jpg",
+        "link": "https://www.spa.gov.sa/1595088"
+      },
+      {
+        "name": "بطولة أمانة جدة لأشبال جمعية مراكز الأحياء (دوري وطن)",
+        "category": "بطولات رياضية",
+        "type": "programs",
+        "image": "media/work/program-watan-league.jpg",
+        "link": "https://2u.pw/0PSMRt7D"
+      },
+      {
+        "name": "ماراثون الحمدانية الأول",
+        "category": "ماراثونات",
+        "type": "programs",
+        "image": "media/work/program-hamdaniya-1.jpg",
+        "link": "https://2u.pw/9WiztQXg"
+      },
+      {
+        "name": "ماراثون الحمدانية الثالث",
+        "category": "ماراثونات",
+        "type": "programs",
+        "image": "media/work/program-hamdaniya-3.jpg",
+        "link": "https://2u.pw/Talm8ziH"
+      },
+      {
+        "name": "حملة النهر الجاري بهيئة جدة",
+        "category": "برومو وأفلام",
+        "type": "media",
+        "image": "media/work/media-nahr-jari.jpg",
+        "link": "https://youtube.com/user/nahrjari"
+      },
+      {
+        "name": "مناشط توعوية لفرع هيئة الأمر بالمعروف بمنطقة مكة المكرمة",
+        "category": "إدارة محتوى",
+        "type": "media",
+        "image": "media/work/media-awareness-x.jpg",
+        "link": "https://x.com/mnashettawawyah"
+      },
+      {
+        "name": "المعرض الافتراضي لجهود مكافحة المخدرات بمكة المكرمة",
+        "category": "معارض رقمية",
+        "type": "media",
+        "image": "media/work/media-digital-exhibition.jpg",
+        "link": ""
+      },
+      {
+        "name": "الشعارات والهوية البصرية",
+        "category": "تصميم احترافي",
+        "type": "brand",
+        "image": "media/work/brand-logos.jpg",
+        "link": ""
+      },
+      {
+        "name": "المطبوعات التجارية",
+        "category": "مطبوعات",
+        "type": "brand",
+        "image": "media/work/brand-stationery.jpg",
+        "link": ""
+      },
+      {
+        "name": "الإصدارات: بروفايل، أجندة، تقارير سنوية، كروت",
+        "category": "إصدارات ومطبوعات",
+        "type": "brand",
+        "image": "media/work/brand-publications.jpg",
+        "link": ""
+      },
+      {
+        "name": "كأس بطولة أمانة العاصمة المقدسة",
+        "category": "دروع وكؤوس",
+        "type": "brand",
+        "image": "media/work/brand-trophy.jpg",
+        "link": ""
+      }
+    ]
+  },
+  "packages": {
+    "label": "باقات المواقع",
+    "title": "باقات تصميم المواقع",
+    "popularBadge": "الأكثر طلباً",
+    "button": "اطلب الباقة",
+    "currency": "ر.س",
+    "perMonth": "ر.س / شهرياً",
+    "items": [
+      {
+        "title": "موقع تعريفي",
+        "text": "للشركات والمحلات اللي تبغى حضور احترافي.",
+        "price": "[السعر]",
+        "monthly": false,
+        "featured": false,
+        "features": [
+          {
+            "text": "حتى [عدد] صفحات"
+          },
+          {
+            "text": "تصميم متوافق مع الجوال"
+          },
+          {
+            "text": "زر واتساب ونموذج تواصل"
+          },
+          {
+            "text": "ربط بخرائط جوجل"
+          }
+        ]
+      },
+      {
+        "title": "متجر إلكتروني",
+        "text": "بيع منتجاتك أونلاين بسهولة.",
+        "price": "[السعر]",
+        "monthly": false,
+        "featured": true,
+        "features": [
+          {
+            "text": "لوحة تحكم لإدارة المنتجات"
+          },
+          {
+            "text": "ربط بوابات الدفع"
+          },
+          {
+            "text": "ربط شركات الشحن"
+          },
+          {
+            "text": "تدريب على إدارة المتجر"
+          }
+        ]
+      },
+      {
+        "title": "باقة السوشيال ميديا",
+        "text": "إدارة حساباتك وحملاتك كل شهر.",
+        "price": "[السعر]",
+        "monthly": true,
+        "featured": false,
+        "features": [
+          {
+            "text": "[عدد] تصميم منشور شهرياً"
+          },
+          {
+            "text": "إدارة حملة إعلانية ممولة"
+          },
+          {
+            "text": "الرد على الرسائل والتعليقات"
+          },
+          {
+            "text": "تقرير أداء شهري"
+          }
+        ]
+      }
+    ]
+  },
+  "clients": {
+    "label": "عملاؤنا",
+    "title": "شركاء النجاح",
+    "logos": [
+      {
+        "name": "جهة حكومية",
+        "image": "media/clients/client-01.jpg"
+      },
+      {
+        "name": "وزارة الحج والعمرة",
+        "image": "media/clients/client-02.jpg"
+      },
+      {
+        "name": "وزارة الموارد البشرية والتنمية الاجتماعية",
+        "image": "media/clients/client-03.jpg"
+      },
+      {
+        "name": "محافظة جدة",
+        "image": "media/clients/client-04.jpg"
+      },
+      {
+        "name": "إمارة منطقة مكة المكرمة",
+        "image": "media/clients/client-05.jpg"
+      },
+      {
+        "name": "جهة أمنية",
+        "image": "media/clients/client-06.jpg"
+      },
+      {
+        "name": "قوات أمن المنشآت",
+        "image": "media/clients/client-07.jpg"
+      },
+      {
+        "name": "الرئاسة العامة لهيئة الأمر بالمعروف والنهي عن المنكر",
+        "image": "media/clients/client-08.jpg"
+      },
+      {
+        "name": "وزارة النقل والخدمات اللوجستية",
+        "image": "media/clients/client-09.jpg"
+      },
+      {
+        "name": "وزارة التعليم – تعليم جدة",
+        "image": "media/clients/client-10.jpg"
+      },
+      {
+        "name": "جامعة الملك عبدالعزيز",
+        "image": "media/clients/client-11.jpg"
+      },
+      {
+        "name": "أمانة جدة",
+        "image": "media/clients/client-12.jpg"
+      },
+      {
+        "name": "أمانة العاصمة المقدسة",
+        "image": "media/clients/client-13.jpg"
+      },
+      {
+        "name": "الجوازات",
+        "image": "media/clients/client-14.jpg"
+      },
+      {
+        "name": "المديرية العامة لمكافحة المخدرات",
+        "image": "media/clients/client-15.jpg"
+      },
+      {
+        "name": "إندومي",
+        "image": "media/clients/client-16.jpg"
+      },
+      {
+        "name": "البيك",
+        "image": "media/clients/client-17.jpg"
+      },
+      {
+        "name": "جمعية مراكز الأحياء بمنطقة مكة المكرمة",
+        "image": "media/clients/client-18.jpg"
+      },
+      {
+        "name": "جامعة الأعمال والتكنولوجيا",
+        "image": "media/clients/client-19.jpg"
+      },
+      {
+        "name": "جامعة أم القرى",
+        "image": "media/clients/client-20.jpg"
+      },
+      {
+        "name": "مستشفى محمد صالح باشراحيل",
+        "image": "media/clients/client-21.jpg"
+      },
+      {
+        "name": "شركة عبدالله هاشم المحدودة",
+        "image": "media/clients/client-22.jpg"
+      },
+      {
+        "name": "الحاج حسين علي رضا وشركاه",
+        "image": "media/clients/client-23.jpg"
+      },
+      {
+        "name": "شركة محمد يوسف ناغي للسيارات",
+        "image": "media/clients/client-24.jpg"
+      },
+      {
+        "name": "تجمع جدة الصحي الثاني",
+        "image": "media/clients/client-25.jpg"
+      },
+      {
+        "name": "حافل",
+        "image": "media/clients/client-26.jpg"
+      },
+      {
+        "name": "شركة عقارات للتطوير والتنمية",
+        "image": "media/clients/client-27.jpg"
+      },
+      {
+        "name": "المستشفى السعودي الألماني",
+        "image": "media/clients/client-28.jpg"
+      },
+      {
+        "name": "مستشفى أندلسية",
+        "image": "media/clients/client-29.jpg"
+      },
+      {
+        "name": "فقيه",
+        "image": "media/clients/client-30.jpg"
+      },
+      {
+        "name": "الإبريز النقي للذهب والمجوهرات",
+        "image": "media/clients/client-31.jpg"
+      },
+      {
+        "name": "عزام الشريف",
+        "image": "media/clients/client-32.jpg"
+      },
+      {
+        "name": "مجموعة محمد الكندي القابضة",
+        "image": "media/clients/client-33.jpg"
+      },
+      {
+        "name": "مجوهرات",
+        "image": "media/clients/client-34.jpg"
+      },
+      {
+        "name": "منصور",
+        "image": "media/clients/client-35.jpg"
+      },
+      {
+        "name": "دانسات",
+        "image": "media/clients/client-36.jpg"
+      },
+      {
+        "name": "تمر",
+        "image": "media/clients/client-37.jpg"
+      },
+      {
+        "name": "مجموعة العطير للتجارة",
+        "image": "media/clients/client-38.jpg"
+      },
+      {
+        "name": "مكيون",
+        "image": "media/clients/client-39.jpg"
+      },
+      {
+        "name": "بوابة جدة للذهب",
+        "image": "media/clients/client-40.jpg"
+      },
+      {
+        "name": "مجموعة محمد عبدالصمد القرشي",
+        "image": "media/clients/client-41.jpg"
+      },
+      {
+        "name": "مشارق",
+        "image": "media/clients/client-42.jpg"
+      },
+      {
+        "name": "شركة مطوفي حجاج الدول الأفريقية غير العربية",
+        "image": "media/clients/client-43.jpg"
+      },
+      {
+        "name": "ضيوف البيت",
+        "image": "media/clients/client-44.jpg"
+      },
+      {
+        "name": "مسار",
+        "image": "media/clients/client-45.jpg"
+      },
+      {
+        "name": "قطرة الحياة",
+        "image": "media/clients/client-46.jpg"
+      },
+      {
+        "name": "مؤسسة منصور بن سنيان الخيرية",
+        "image": "media/clients/client-47.jpg"
+      },
+      {
+        "name": "الخير",
+        "image": "media/clients/client-48.jpg"
+      },
+      {
+        "name": "باليد للديكور",
+        "image": "media/clients/client-49.jpg"
+      },
+      {
+        "name": "بن داود القابضة – الدانوب",
+        "image": "media/clients/client-50.jpg"
+      },
+      {
+        "name": "جمعية خيرية",
+        "image": "media/clients/client-51.jpg"
+      },
+      {
+        "name": "جمعية خيرية",
+        "image": "media/clients/client-52.jpg"
+      },
+      {
+        "name": "اللجنة الوطنية لرعاية السجناء والمفرج عنهم وأسرهم بمكة المكرمة",
+        "image": "media/clients/client-53.jpg"
+      },
+      {
+        "name": "جمعية كفى للتوعية بأضرار التدخين والمخدرات",
+        "image": "media/clients/client-54.jpg"
+      },
+      {
+        "name": "خيركم – جمعية تحفيظ القرآن بجدة",
+        "image": "media/clients/client-55.jpg"
+      },
+      {
+        "name": "شريك نجاح",
+        "image": "media/clients/client-56.jpg"
+      },
+      {
+        "name": "جونيور",
+        "image": "media/clients/client-57.jpg"
+      },
+      {
+        "name": "جامع فاطمة حسين علي رضا",
+        "image": "media/clients/client-58.jpg"
+      },
+      {
+        "name": "مجمع باليد القرآني",
+        "image": "media/clients/client-59.jpg"
+      },
+      {
+        "name": "الجمعية الخيرية بقرى وادي ستارة",
+        "image": "media/clients/client-60.jpg"
+      }
+    ],
+    "reviews": []
+  },
+  "faq": {
+    "label": "الأسئلة الشائعة",
+    "title": "عندك سؤال؟",
+    "items": [
+      {
+        "question": "وش الخدمات اللي تقدمونها؟",
+        "answer": "خدمات متكاملة في التسويق والدعاية والإعلان والعلاقات العامة: الحملات التسويقية، تنظيم البرامج والفعاليات وورش العمل، اللوحات الإعلانية والإرشادية، المعارض والبوثات، البرومو والتصوير، إدارة محتوى التواصل الاجتماعي، المطبوعات، الهدايا الدعائية والدروع، وتصميم المواقع."
+      },
+      {
+        "question": "هل تتعاملون مع الجهات الحكومية؟",
+        "answer": "نعم، من عملائنا وزارات وأمانات وجامعات وجهات حكومية في جدة ومكة المكرمة والمدينة المنورة، إلى جانب شركات ومؤسسات خيرية."
+      },
+      {
+        "question": "هل تنفذون الهدايا والدروع بشعار جهتنا؟",
+        "answer": "نعم، نوفّر الهدايا الدعائية (أكياس، تقاويم، أقلام، ميداليات، أطقم) والدروع والكؤوس والمجسمات بتصاميم خاصة بجهتك."
+      },
+      {
+        "question": "وين مقركم وكيف أتواصل معكم؟",
+        "answer": "مقرنا في جدة – شارع حائل – مركز هوازن. تقدر تتصل على 0126605626، أو تراسلنا واتساب على 0551280719، أو عبر البريد info@sma-adv.com."
+      }
+    ]
+  },
+  "apply": {
+    "label": "تواصل معنا",
+    "title": "جاهز تبدأ؟ اطلب خدمتك",
+    "text": "عبّي النموذج بتفاصيل طلبك، ويوصلنا مباشرة على واتساب ونتواصل معك.",
+    "address": "جدة – شارع حائل – مركز هوازن",
+    "nameLabel": "الاسم",
+    "namePlaceholder": "اسمك الكريم",
+    "phoneLabel": "رقم الجوال",
+    "serviceLabel": "الخدمة المطلوبة",
+    "messageLabel": "تفاصيل الطلب",
+    "messagePlaceholder": "احكِ لنا باختصار عن فكرتك",
+    "button": "إرسال الطلب",
+    "whatsappIntro": "طلب جديد من موقع الوسائط الذكية",
+    "serviceOptions": [
+      {
+        "text": "حملة تسويقية أو إعلانية"
+      },
+      {
+        "text": "تنظيم فعالية أو برنامج"
+      },
+      {
+        "text": "لوحات إعلانية أو إرشادية"
+      },
+      {
+        "text": "معرض أو بوث"
+      },
+      {
+        "text": "برومو أو تصوير"
+      },
+      {
+        "text": "إدارة محتوى التواصل الاجتماعي"
+      },
+      {
+        "text": "هوية بصرية أو مطبوعات"
+      },
+      {
+        "text": "هدايا دعائية أو دروع"
+      },
+      {
+        "text": "تصميم موقع إلكتروني"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© ٢٠٢٦ وكالة الوسائط الذكية للدعاية والإعلان",
+    "slogan": "نحوّل الفكرة إلى واقع"
+  }
+}
