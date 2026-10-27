@@ -865,6 +865,23 @@
   },
   "footer": {
     "copyright": "© 2026 Smart Media Advertising Agency",
-    "slogan": "We turn ideas into reality"
+    "slogan": "We turn ideas into reality",
+    "about": "A Jeddah advertising agency offering integrated marketing, media, advertising and public relations services, from idea and design to execution.",
+    "areasTitle": "We serve",
+    "areas": [
+      {
+        "text": "Jeddah"
+      },
+      {
+        "text": "Makkah"
+      },
+      {
+        "text": "Madinah"
+      }
+    ],
+    "pagesTitle": "Pages",
+    "contactTitle": "Location & contact",
+    "followTitle": "Follow us",
+    "backToTop": "Back to top"
   }
 }

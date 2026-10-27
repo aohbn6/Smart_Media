@@ -285,6 +285,18 @@ content:
         fields:
           - { name: copyright, label: Copyright, type: string }
           - { name: slogan, label: Slogan, type: string }
+          - { name: about, label: "Short description (footer)", type: text }
+          - { name: areasTitle, label: "Service areas title", type: string }
+          - name: areas
+            label: Service areas (cities)
+            type: object
+            list: true
+            fields:
+              - { name: text, label: City, type: string }
+          - { name: pagesTitle, label: "Pages column title", type: string }
+          - { name: contactTitle, label: "Contact column title", type: string }
+          - { name: followTitle, label: "Social media title", type: string }
+          - { name: backToTop, label: "Back to top button", type: string }
 
   # ---------------------------------------------------------------
   - name: english

@@ -128,7 +128,9 @@
       fName: c.apply.nameLabel, fNamePh: c.apply.namePlaceholder, fPhone: c.apply.phoneLabel,
       fService: c.apply.serviceLabel, fMsg: c.apply.messageLabel, fMsgPh: c.apply.messagePlaceholder,
       send: c.apply.button, copy: c.footer.copyright, slogan: c.footer.slogan, waAria: c.ui.whatsapp,
-      view: c.ui.view, more: c.ui.more, poBoxLabel: c.ui.poBoxLabel
+      view: c.ui.view, more: c.ui.more, poBoxLabel: c.ui.poBoxLabel,
+      fAbout: c.footer.about || '', fAreasT: c.footer.areasTitle || '', fPagesT: c.footer.pagesTitle || '',
+      fContactT: c.footer.contactTitle || '', fFollowT: c.footer.followTitle || '', fTop: c.footer.backToTop || ''
     };
     var showPackages = settings.showPackages !== false;
 
@@ -204,7 +206,10 @@
       wipe: state.wipe,
       arrowBack: ar ? 'M9 6l6 6-6 6' : 'M15 6l-6 6 6 6',
       arrowFwd: ar ? 'M15 6l-6 6 6 6' : 'M9 6l6 6-6 6',
-      nav: nav, slides: slides, tick: tick, dots: dots,
+      nav: nav, footNav: nav.concat([{ label: c.nav.apply, href: '#apply', go: go('#apply') }]),
+      areas: (c.footer.areas || []).map(function (a) { return { txt: a.text }; }),
+      hasSocial: !!(settings.xHandle || settings.instagram || settings.tiktok),
+      slides: slides, tick: tick, dots: dots,
       counter: digits(i + 1, ar) + ' / ' + digits(n, ar),
       prev: function () { setState({ slide: (i - 1 + n) % n }); },
       next: function () { setState({ slide: (i + 1) % n }); },
