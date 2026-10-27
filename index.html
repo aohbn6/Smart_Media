@@ -14,7 +14,7 @@
 <link rel="icon" type="image/png" href="media/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&amp;family=Readex+Pro:wght@500;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=2">
+<link rel="stylesheet" href="assets/css/style.css?v=3">
 </head>
 <body>
 <!-- The page is drawn here by assets/js/app.js using the template below
@@ -211,7 +211,7 @@
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px">
 <sc-for list="{{works}}" as="w" hint-placeholder-count="6">
 <figure class="{{w.cls}}" style="margin: 0; display: flex; flex-direction: column; gap: 14px">
-<sc-if value="{{w.image}}"><img src="{{w.image}}" alt="{{w.name}}" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 18px; border: 1px solid var(--cbd)"></sc-if><sc-if value="{{w.noImage}}"><div style="aspect-ratio: 4 / 3; border-radius: 18px; background: var(--card); border: 1px dashed var(--cbd); display: flex; align-items: center; justify-content: center; color: var(--sm)">{{t.workImg}}</div></sc-if>
+<sc-if value="{{w.image}}"><img src="{{w.image}}" alt="{{w.name}}" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; background: var(--card); border-radius: 18px; border: 1px solid var(--cbd)"></sc-if><sc-if value="{{w.noImage}}"><div style="aspect-ratio: 4 / 3; border-radius: 18px; background: var(--card); border: 1px dashed var(--cbd); display: flex; align-items: center; justify-content: center; color: var(--sm)">{{t.workImg}}</div></sc-if>
 <figcaption style="display: flex; flex-direction: column"><strong style="color: var(--head); font-size: 18px">{{w.name}}</strong><span style="color: var(--sm); font-size: 15px">{{w.cat}}</span><sc-if value="{{w.link}}"><a class="nl" href="{{w.link}}" target="_blank" rel="noopener" style="align-self: flex-start; margin-top: 6px; color: var(--acc); font-size: 15px; font-weight: 700">{{t.view}} ↗</a></sc-if></figcaption>
 </figure>
 </sc-for>
