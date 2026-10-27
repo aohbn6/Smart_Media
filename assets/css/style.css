@@ -1,7 +1,9 @@
 /* Smart Media website styles.
    Colors for each theme are CSS variables at the top: edit them there. */
 body{margin:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;color-scheme:dark light}
+.sm-dark{color-scheme:dark}
+.sm-light{color-scheme:light}
 a{color:inherit}
 /* ---------- theme tokens ---------- */
 .sm-root{--page:#070A10;--text:#E8EEF5;--head:#FFFFFF;--mut:#B8C4D2;--line:#1C2530;--heroBg:#0A0E18;--glass:rgba(8,11,20,0.45);--glassBd:rgba(255,255,255,0.16);--field:rgba(7,10,16,0.7);--fieldBd:#2A3644;--glowOp:1;--raysBg:.07;--heroAcc:var(--accent);--pill:rgba(255,255,255,0.25)}
